@@ -1,0 +1,311 @@
+/* Variables */
+:root {
+  --background-color: #fff;
+  --section-background-color: rgb(141, 141, 141);
+  --links: rgb(0, 26, 196);
+  --visited-links: #05676e;
+  --active-links: #489c79;
+}
+
+/* Common Styling */
+.page-container {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* a {
+  color: var(--links);
+  text-decoration: none;
+} */
+
+/* a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  box-shadow: 3px 3px 10px 1px whitesmoke, -1px 0 0.4em whitesmoke;
+  background-color: whitesmoke;
+  border-radius: 80px;
+  padding-left: 10px;
+  padding-right: 10px;;
+} */
+
+a:active {
+  color: var(--active-links);
+}
+
+/* Header Styling */
+.page-header {
+  display: flex;
+  width: 100%;
+  background-color: var(--section-background-color);
+  border-bottom-style: solid;
+  border-width: 5px;
+  height: 105px;
+  top: 0px;
+  margin: 0;
+  width: 100%;
+  position: sticky;
+  z-index: 100;
+  color: rgb(0, 0, 0) !important;
+}
+
+.page-header-item {
+  flex: 0 1 200px;
+  border-width: 0;
+}
+
+.page-header-item:last-child {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.main-navigation {
+  width: 100%;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
+  overflow: hidden;
+}
+
+.main-navigation .icon {
+  display: none;
+}
+
+.navigation-list {
+  margin-top: 10px;
+  list-style-type: none;
+  font-size: 30px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.navigation-list li {
+  display: inline-block;
+  transition: text-shadow .2s;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  color: var(--links);
+  border-radius: 20px;
+  text-shadow: 0.5px 0.5px 5px rgb(80, 80, 80);
+  color: rgb(0, 0, 0) !important;
+}
+
+.navigation-list li:hover {
+  text-decoration: underline;
+  font-weight: 1000;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.iron-tusk-menu-logo {
+  max-height: 80px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(80, 80, 80);
+  box-shadow: 0 0 11px 5px rgb(80, 80, 80);
+}
+
+.iron-tusk-menu-logo:hover {
+  box-shadow: 0 0 11px 10px rgb(160, 160, 160);
+  border-color: rgb(80. 80. 80);
+  border-style: solid;
+  border-width: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-navigation li:not(:nth-child(4)) {display: none};
+  .main-navigation li.icon {
+    float: right;
+    display: block;
+  }
+  .main-navigation.responsive {position: relative};
+  .main-navigation.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-navigation.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Footer Styling */
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+  background-color: lightgrey;
+  padding: 0;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0;
+}
+
+.social-media {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: lightgrey;
+}
+
+.social-media-icon {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+/* Home Page Styling */
+.home {
+  text-align: center;
+  align-items: center;
+  /* margin-bottom: 50px; */
+}
+
+.banner-container {
+  background-color: #fff;
+}
+
+.iron-tusk-tattoo-banner-logo {
+  width: 75%;
+}
+
+.artist-introduction {
+  border-style: solid;
+  border-color: black;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  background-color: lightgrey;
+  margin-top: 10px;
+}
+
+.artist-grid-main-page {
+  text-align: center;
+}
+
+.grid-item {
+  display: inline-block;
+  min-width: 250px;
+  max-width: 350px;
+  width: 25%;
+  vertical-align: top;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main-page-grid-item-picture {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.testimonials {
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  border-bottom-width: 5px;
+  background-color: var(--section-background-color);
+}
+
+.contact-us-main-page {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.contact-us-main-page-grid {
+  text-align: center;
+}
+
+.contact-us-main-page-grid-item {
+  display: inline-block;
+  max-width: 200;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+#map {
+  height: 250px;
+  width: 250px;
+}
+
+.main-page-location {
+  margin-bottom: 0;
+}
+
+.main-page-phone {
+  margin-bottom: 0
+}
+
+.main-page-email-form {
+  max-width: 250px;
+}
+
+.main-page-email-form-message {
+  font-size: small;
+  margin-top: 0;
+}
+
+.main-page-spacer {
+  height: 30px;
+}
+
+
+/* Artists Page Styling */
+
+
+/* Merch page styling */
+
+
+/* Care Guide Styling */
+
+
+/* FAQ Styling */
+
+
+/* About Us Page Styling */
+
+
+/* Contact Us Page Styling */
+
+a {
+  color: var(--links);
+  text-decoration: none;
+}
