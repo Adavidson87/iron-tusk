@@ -57,6 +57,50 @@
     </header>
     <main>
 
+      <section class="contact-us-main-page">
+        <div class="contact-us-main-page-grid">
+          <div class="contact-us-main-page-grid-item">
+            <div class="main-page-location">
+              <h1>The shop is at</h1>
+              <h4>215 E Main St, McMinnville, TN 37110</h4>
+              <div id="map"><iframe
+                  src="
+              https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus"
+                  style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              <script async
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAb-csa2wE7NQt--2MHHN6b6EmWeyJlM&callback=initMap"></script>
+            </div>
+          </div>
+          <div class="contact-us-main-page-grid-item">
+            <div class="main-page-phone">
+              <h1>Give us a call at</h1>
+              <a href="tel:+19313141485">(931)314-1485</a>
+            </div>
+            <div class="main-page-email-form">
+              <h1>Or email us</h1>
+              <p class="main-page-email-form-message">Please include your name and email, and if you include your phone
+                number, let us know when it would be
+                best to call or text. Also please let us know details on when and what we can do for you.</p>
+              <form action="" method="post">
+                <label>Name: </label>
+                <input type="text" required>
+                <br>
+                <label>Phone: </label>
+                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <br>
+                <label>Email: </label>
+                <input type="email" required>
+                <br>
+                <label>Message: </label>
+                <textarea maxlength="500" required></textarea>
+                <input type="submit" value="Send Message">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer class="page-footer">
       <p class="footer-text">Follow us on</p>

@@ -9,12 +9,10 @@
   <link rel="shortcut icon" href="img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Rye&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Rye&display=swap">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script type="module" src="js/index.js"></script>
 </head>
 
 <body class="page-container">
@@ -27,9 +25,14 @@
             <a href="index.html" role="menu-item" class="navigation-list-item navigation"
               style="color:rgb(0, 0, 0)">Home</a>
           </li>
-          <li role="presentation">
-            <a href="Artists.html" role="menu-item" class="navigation-list-item navigation"
-              style="color:rgb(0, 0, 0)">Artists</a>
+          <li role="presentation" class="dropdown">
+            <a href="Artists.html" role="menu-item" class="dropdown-button" style="color:rgb(0, 0, 0)">Artists</a>
+            <div class="dropdown-content">
+              <a href="#">Chris Stephens</a>
+              <a href="#">Emmet Upton</a>
+              <a href="#">Emmy Stepien</a>
+              <a href="#">Joshua Jones</a>
+            </div>
           </li>
           <li role="presentation">
             <a href="Merchandise.html" rolerole="menu-item" class="navigation-list-item navigation"
@@ -65,15 +68,50 @@
 
       <section class="greeting-container">
         <div>
-          <h1 class="greeting-main-page">Welcome to Iron Tusk Tattoos! We are an artist owned and operated shop located
+          <h1 class="greeting-main-page">Welcome to Iron Tusk Tattoos!</h1>
+          <h1>We are an artist owned and operated shop located
             in downtown
             McMinnville, TN.</h1>
         </div>
         <div class="hours-main-page">
-          <h2>Shop hours are 11:00 AM to 8:00 PM Tuesday through Sunday.</h2>
+          <h2>Shop hours are 11:00 AM to 8:00 PM Tuesday through Saturday.</h2>
         </div>
         <div class="paragraph-main-page">
-          <h3>Walk-ins are welcome, but appointments are highly encouraged!</h3>
+          <h3>Walk-ins are always welcome!</h3>
+        </div>
+      </section>
+
+      <section class="events">
+        <div>
+          <h1>EVENTS</h1>
+          <button type="button" className="collapsible" id="collapsible">
+            Artist Competition
+          </button>
+          <div class="event-content">
+            <img src="img/artists-competition-crop.jpg" class="event-picture">
+            <p>We are going to hold our inaugural inner shop tattoo competition! The competition will be held
+              Saturday,
+              July 9th at 11:30am. Each Iron Tusk tattoo artist will come up with an original full color
+              Neo-Traditional
+              tattoo design (designs will be released by May 21st ). We are asking for volunteers to be canvases. If
+              you
+              are selected, your tattoo will be FREE! Lunch will be provided, and you will have an original tattoo
+              design on your body!</p>
+            <h3> To qualify you must:</h3>
+            <ol class="event-list">
+              <li class="event-list-item">Like and share <a
+                  href="https://m.facebook.com/irontusktattoos/photos/a.100534152553851/140875365186396/?type=3&source=48">this
+                  post</a> on Facebook</li>
+              <li class="event-list-item">Come into the shop to submit your name and contact info by July 1st</li>
+              <li class="event-list-item">Be able to sit for a tattoo for 6 - 8 hours</li>
+              <li class="event-list-item">Have a great attitude and be ready for fun!</li>
+            </ol>
+            <h3>How the competition will work</h3>
+            <p>The people who will be canvases will be selected at random on July 2nd. The 4 people
+              selected will choose their tattoo artist at random and get the design the artist came up with. We will
+              post the final tattoo without identifying the artist. We will leave voting open for 3 days. Whoever wins
+              will get a trophy and bragging rights.</p>
+          </div>
         </div>
       </section>
 
@@ -85,7 +123,7 @@
             <div class="grid-item">
               <a href="Emmet_Upton.html" style="color:rgb(0, 0, 0);">
                 <h2>Emmet Upton</h2>
-                <img class="main-page-grid-item-picture" src="img/emmet-upton-profile.jpg">
+                <img class="main-page-grid-item-picture" src="img/emmet-upton-profile-crop.jpg">
               </a>
             </div>
             <div class="grid-item">
@@ -96,11 +134,11 @@
             </div>
             <div class="grid-item">
               <h2>Chris "Critter" Stephens</h2>
-              <img class="main-page-grid-item-picture" src="img/chris-stevens-profile.jpg">
+              <img class="main-page-grid-item-picture" src="img/chris-stevens-profile-crop.jpg">
             </div>
             <div class="grid-item">
               <h2>Emmy Stepien</h2>
-              <img class="main-page-grid-item-picture" src="img/emmy-stepien-profile.jpg">
+              <img class="main-page-grid-item-picture" src="img/emmy-stepien-profile-crop.jpg">
             </div>
           </div>
         </div>
@@ -132,53 +170,29 @@
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.</p>
         </div>
+        <a href="https://m.facebook.com/pg/irontusktattoos/reviews/?ref=page_internal&mt_nav=0">Read more on our
+          Facebook</a>
       </section>
 
       <section class="contact-us-main-page">
         <div class="contact-us-main-page-grid">
-          <div class="contact-us-main-page-grid-item">
-            <div class="main-page-location">
-              <h1>The shop is at</h1>
-              <h4>215 E Main St, McMinnville, TN 37110</h4>
-              <div id="map"><iframe
-                  src="
+          <a class="contact-us-main-page-grid-item" href="tel:+19313141485">(931)314-1485</a>
+          <p class="contact-us-main-page-grid-item">irontuskart@gmail.com</p>
+          <a class="contact-us-main-page-grid-item"
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus">
+            215 E Main St, McMinnville, TN 37110</a>
+          <div class="contact-us-main-page-grid-item" id="map"><iframe
+              src="
               https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus"
-                  style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-              <script async
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAb-csa2wE7NQt--2MHHN6b6EmWeyJlM&callback=initMap"></script>
-            </div>
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="contact-us-main-page-grid-item">
-            <div class="main-page-phone">
-              <h1>Give us a call at</h1>
-              <a href="tel:+19313141485">(931)314-1485</a>
-            </div>
-            <div class="main-page-email-form">
-              <h1>Or email us</h1>
-              <p class="main-page-email-form-message">Please include your name and email, and if you include your phone
-                number, let us know when it would be
-                best to call or text. Also please let us know details on when and what we can do for you.</p>
-              <form action="" method="post">
-                <label>Name: </label>
-                <input type="text" required>
-                <br>
-                <label>Phone: </label>
-                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-                <br>
-                <label>Email: </label>
-                <input type="email" required>
-                <br>
-                <label>Message: </label>
-                <textarea maxlength="500" required></textarea>
-                <input type="submit" value="Send Message">
-              </form>
-            </div>
-          </div>
+          <!-- <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAb-csa2wE7NQt--2MHHN6b6EmWeyJlM&callback=initMap"></script> -->
         </div>
       </section>
 
-      <div class="main-page-spacer"></div><!-- this is a spacer -->
+      <!-- <div class=" main-page-spacer">
+      </div>this is a spacer -->
 
     </main>
 
@@ -195,6 +209,9 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
   </div>
+
+  <script type="module" src="js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
 </body>
 

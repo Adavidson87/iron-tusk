@@ -1,7 +1,11 @@
 /* Variables */
 :root {
   --background-color: #fff;
-  --section-background-color: rgb(141, 141, 141);
+  --header-background-color: rgb(141, 141, 141);
+  --header-text-color: rgb(0, 0, 0);
+  --header-shadow-color: rgb(80, 80, 80);
+  --header-hover-shadow: rgb(255, 255, 255);
+  --logo-shadow-color: rgb(160, 160, 160);
   --links: rgb(0, 26, 196);
   --visited-links: #05676e;
   --active-links: #489c79;
@@ -27,22 +31,28 @@ h1 {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 0;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
 }
 
 h2 {
   font-size: 24px;
   font-weight: 700;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 700;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
 }
 
-/* a {
+a {
   color: var(--links);
   text-decoration: none;
-} */
+}
 
 /* a:hover {
   text-decoration: underline;
@@ -62,7 +72,7 @@ a:active {
 .page-header {
   display: flex;
   width: 100%;
-  background-color: var(--section-background-color);
+  background-color: var(--header-background-color);
   border-bottom-style: solid;
   border-width: 5px;
   height: 105px;
@@ -71,7 +81,7 @@ a:active {
   width: 100%;
   position: sticky;
   z-index: 100;
-  color: rgb(0, 0, 0) !important;
+  color: var(--header-text-color) !important;
 }
 
 .page-header-item {
@@ -111,43 +121,103 @@ a:active {
   vertical-align: middle;
   color: var(--links);
   border-radius: 20px;
-  text-shadow: 0.5px 0.5px 5px rgb(80, 80, 80);
-  color: rgb(0, 0, 0) !important;
+  text-shadow: 0.5px 0.5px 5px var(--header-shadow-color);
+  color: var(--header-text-color) !important;
 }
 
 .navigation-list li:hover {
   text-decoration: underline;
   font-weight: 1000;
-  text-shadow: 0 0 20px rgb(255, 255, 255);
+  text-shadow: 0 0 20px var(--header-hover-shadow);
 }
 
 .iron-tusk-menu-logo {
   max-height: 80px;
   border-width: 2px;
   border-style: solid;
-  border-color: rgb(80, 80, 80);
-  box-shadow: 0 0 11px 5px rgb(80, 80, 80);
+  border-color: var(--header-shadow-color);
+  box-shadow: 0 0 11px 5px var(--header-shadow-color);
 }
 
 .iron-tusk-menu-logo:hover {
-  box-shadow: 0 0 11px 10px rgb(160, 160, 160);
-  border-color: rgb(80. 80. 80);
+  box-shadow: 0 0 11px 10px var(--logo-shadow-color);
+  border-color: var(--header-shadow-color);
   border-style: solid;
   border-width: 2px;
 }
 
+.li a:hover,
+.dropdown:hover .dropdown-button {
+  background-color: var(--header-background-color)
+}
+
+.li a,
+.dropdown-button {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background-color);
+  min-width: 160px;
+  box-shadow: 0 0 11px 10px var(--logo-shadow-color);
+  z-index: 1;
+  color: var(--header-text-color);
+  border-style: solid;
+  border-color: var(--header-text-color);
+  border-width: 2px;
+}
+
+.dropdown-content a {
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: var(--header-text-color);
+  font-size: 24px;
+}
+
+.dropdown-content a:hover {
+  text-shadow: 0 0 20px var(--logo-shadow-color);
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 @media screen and (max-width: 600px) {
-  .main-navigation li:not(:nth-child(4)) {display: none};
+  .main-navigation li:not(:nth-child(4)) {
+    display: none
+  }
+
+  ;
+
   .main-navigation li.icon {
     float: right;
     display: block;
   }
-  .main-navigation.responsive {position: relative};
+
+  .main-navigation.responsive {
+    position: relative
+  }
+
+  ;
+
   .main-navigation.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .main-navigation.responsive li {
     float: none;
     display: block;
@@ -170,6 +240,9 @@ a:active {
   margin: 0px;
   background-color: lightgrey;
   padding: 0;
+  border-top-style: solid;
+  border-width: 2px;
+  border-color: var(--header-text-color)
 }
 
 .footer-text {
@@ -193,7 +266,8 @@ a:active {
 .home {
   text-align: center;
   align-items: center;
-  /* margin-bottom: 50px; */
+  margin-bottom: 2.5rem;
+  padding-bottom: 1px;
 }
 
 .banner-container {
@@ -202,6 +276,63 @@ a:active {
 
 .iron-tusk-tattoo-banner-logo {
   width: 75%;
+}
+
+.greeting-container {
+  border-style: solid;
+  border-color: black;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  background-color: lightgrey;
+  margin-top: 10px;
+}
+
+.events {
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border-style: solid;
+  border-color: var(--header-text-color);
+  border-width: 2px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.event-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.event-picture {
+  width: 100%;
+  max-height: auto;
+}
+
+.event-list {
+  display: table;
+  text-align: center;
+  /* max-width: 350px; */
+  margin-left: auto;
+  margin-right: auto;
+  list-style-position: inside;
+
+
 }
 
 .artist-introduction {
@@ -231,39 +362,61 @@ a:active {
 
 .main-page-grid-item-picture {
   width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
 .testimonials {
   text-align: center;
-  border-style: solid;
-  border-color: black;
-  border-bottom-width: 5px;
+  /* border-style: solid; */
+  /* border-color: black; */
+  /* border-bottom-width: 5px; */
   background-color: var(--section-background-color);
+  align-items: center;
+}
+
+.testimonal-item {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-us-main-page {
   text-align: center;
   align-items: center;
-  margin-bottom: 50px;
+  justify-content: center;
+
 }
 
 .contact-us-main-page-grid {
   text-align: center;
+  border-style: solid;
+  border-color: black;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  background-color: lightgrey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* padding-top: 10px; */
 }
 
 .contact-us-main-page-grid-item {
-  display: inline-block;
-  max-width: 200;
+  display: grid;
+  columns: 1;
+  max-width: 400px;
   vertical-align: top;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+  justify-content: center;
 }
 
 #map {
-  height: 250px;
-  width: 250px;
+  max-height: 400px;
+  max-width: 400px;
+  margin-bottom: 50px;
 }
 
 .main-page-location {
