@@ -25,18 +25,31 @@ function navbarCollapse() {
 }
 
 
-var collapse = document.getElementsById("collapsible");
-var i;
+// var collapse = document.getElementsByClassName("collapsible-button");
+// var i;
 
-for (i = 0; i < collapse.length; i++) {
-  collapse[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
+// for (i = 0; i < collapse.length; i++) {
+//   collapse[i].addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.display === "block") {
+//       content.style.display = "none";
+//     } else {
+//       content.style.display = "block";
+//     }
+//   });
+// }
+
+let myLabels = document.querySelectorAll('.lbl-toggle');
+
+Array.from(myLabels).forEach(label => {
+  label.addEventListener('keydown', e => {
+    // 32 === spacebar
+    // 13 === enter
+    if (e.which === 32 || e.which === 13) {
+      e.preventDefault();
+      label.click();
+    };
   });
-}
+});
 
