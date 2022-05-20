@@ -9,97 +9,100 @@
   <link rel="shortcut icon" href="img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Rye&display=swap">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Rye&display=swap">
 </head>
 
 <body class="page-container">
   <div class="content-wrapper">
 
     <header class="page-header">
-      <nav class="navbar">
-        <div class="iron-tusk-logo"><a href="index.html" role="menu-item" class="navigation-list-item navigation"><img
-              class="iron-tusk-logo-navbar" src="img/apple-touch-icon.png"
-              alt="Iron Tusk Tattoo's Logo link to home page"></a></div>
-        <a href="#" class="toggle-btn">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li role="presentation">
-              <a href="index.html" role="menu-item" class="navigation-list-item navigation"
-                style="color:rgb(0, 0, 0)">Home</a>
-            </li>
-            <li role="presentation" class="dropdown">
-              <a href="Artists.html" role="menu-item" class="dropdown-button">Artists</a>
-              <div class="dropdown-content">
-                <a href="#">Chris Stephens</a>
-                <a href="#">Emmet Upton</a>
-                <a href="#">Emmy Stepien</a>
-                <a href="#">Joshua Jones</a>
-              </div>
-            </li>
-            <li role="presentation">
-              <a href="Merchandise.html" rolerole="menu-item" class="navigation-list-item navigation"
-                style="color:rgb(0, 0, 0)">Merch</a>
-            </li>
-            <li role="presentation" class="iron-tusk-menu-logo-list-item"><a href="index.html" role="menu-item" class="navigation-list-item navigation"><img
-              class="iron-tusk-menu-logo" src="img/apple-touch-icon.png"
-              alt="Iron Tusk Tattoo's Logo link to home page"></a></li>
-            <li role="presentation">
-              <a href="FAQ.html" role="menu-item" class="navigation-list-item navigation"
-                style="color:rgb(0, 0, 0)">FAQ</a>
-            </li>
-            <li role="presentation">
-              <a href="About_Us.html" role="menu-item" class="navigation-list-item navigation"
-                style="color:rgb(0, 0, 0)">About</a>
-            </li>
-            <li role="presentation">
-              <a href="Contact_Us.html" role="menu-item" class="navigation-list-item navigation"
-                style="color:rgb(0, 0, 0)">Contact</a>
-            </li>
+      <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
 
-          </ul>
+          <a class="navbar-brand d-lg-none" href="index.html"><img class="navbar-logo"
+                  src="img/apple-touch-icon.png"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
+              aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav mx-auto">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Artists.html">Artists<span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Chris Stephens</a></li>
+                  <li><a href="#">Emmet Upton</a></li>
+                  <li><a href="#">Emmy Stepien</a></li>
+                  <li><a href="#">Joshua Jones</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Merchandise.html">Merch</a>
+              </li>
+
+              <a class="navbar-brand d-none d-lg-block" href="index.html"><img class="navbar-logo"
+                  src="img/apple-touch-icon.png"></a>
+
+              <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="About_Us.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Contact_Us.html">Contact</a>
+              </li>
+
+            </ul>
+          </div>
         </div>
       </nav>
+
     </header>
 
-    <main class="home">
+    <main>
 
-      <div class="banner-container">
-        <img class="iron-tusk-tattoo-banner-logo" src="img/iron-tusk-tattoo-logo.jpg">
-      </div>
-
-      <section class="greeting-container">
+      <section>
         <div>
-          <h1 class="greeting-main-page">Welcome to Iron Tusk Tattoos!</h1>
+          <h1>Welcome to Iron Tusk Tattoos!</h1>
           <h1>We are an artist owned and operated shop located
             in downtown
             McMinnville, TN.</h1>
         </div>
-        <div class="hours-main-page">
+        <div>
           <h2>Shop hours are 11:00 AM to 8:00 PM Tuesday through Saturday.</h2>
         </div>
-        <div class="paragraph-main-page">
+        <div>
           <h3>Walk-ins are always welcome!</h3>
         </div>
       </section>
 
-      <section class="events">
-        <div class="events-wrapper">
-          <h1 class="events-header">EVENTS</h1>
-          <div class="collapsible-wrapper">
-            <input id="collapsible" class="toggle" type="checkbox">
-            <label for="collapsible" class="lbl-toggle" tabindex="0">
+      <section>
+        <div>
+          <h1>EVENTS</h1>
+          <div>
+            <input id="collapsible" type="checkbox">
+            <label for="collapsible" tabindex="0">
               Artist Competition - 07/09/22
             </label>
-            <div class="collapsible-content">
-              <div class="collapsible-inner">
-                <img src="img/artists-competition-crop.jpg" class="event-picture">
+            <div>
+              <div>
+                <img src="img/artists-competition-crop.jpg">
                 <p>We are going to hold our inaugural inner shop tattoo competition! The competition will be held
                   Saturday,
                   July 9th at 11:30am. Each Iron Tusk tattoo artist will come up with an original full color
@@ -109,13 +112,13 @@
                   are selected, your tattoo will be FREE! Lunch will be provided, and you will have an original tattoo
                   design on your body!</p>
                 <h3> To qualify you must:</h3>
-                <ol class="event-list">
-                  <li class="event-list-item">Like and share <a
+                <ol>
+                  <li>Like and share <a
                       href="https://m.facebook.com/irontusktattoos/photos/a.100534152553851/140875365186396/?type=3&source=48">this
                       post</a> on Facebook</li>
-                  <li class="event-list-item">Come into the shop to submit your name and contact info by July 1st</li>
-                  <li class="event-list-item">Be able to sit for a tattoo for 6 - 8 hours</li>
-                  <li class="event-list-item">Have a great attitude and be ready for fun!</li>
+                  <li>Come into the shop to submit your name and contact info by July 1st</li>
+                  <li>Be able to sit for a tattoo for 6 - 8 hours</li>
+                  <li>Have a great attitude and be ready for fun!</li>
                 </ol>
                 <h3>How the competition will work</h3>
                 <p>The people who will be canvases will be selected at random on July 2nd. The 4 people
@@ -129,41 +132,41 @@
         </div>
       </section>
 
-      <section class="artist-list">
-        <div class="artist-introduction">
+      <section>
+        <div>
           <h1>Meet Our Artists!</h1>
 
-          <div class="artist-grid-main-page">
-            <div class="grid-item">
-              <a href="Emmet_Upton.html" style="color:rgb(0, 0, 0);">
-                <h2 class="grid-item-text">Emmet Upton</h2>
-                <img class="main-page-grid-item-picture" src="img/emmet-upton-profile-crop.jpg">
+          <div>
+            <div>
+              <a href="Emmet_Upton.html">
+                <h2>Emmet Upton</h2>
+                <img src="img/emmet-upton-profile-crop.jpg">
               </a>
             </div>
             <div class="grid-item">
-              <a href="Joshua_Jones.html" style="color:rgb(0, 0, 0);">
-                <h2 class="grid-item-text">Joshua Jones</h2>
-                <img class="main-page-grid-item-picture" src="img/joshua-jones-profile.jpg">
+              <a href="Joshua_Jones.html">
+                <h2>Joshua Jones</h2>
+                <img src="img/joshua-jones-profile.jpg">
               </a>
             </div>
             <div class="grid-item">
-              <h2 class="grid-item-text">Chris "Critter" Stephens</h2>
-              <img class="main-page-grid-item-picture" src="img/chris-stevens-profile-crop.jpg">
+              <h2>Chris "Critter" Stephens</h2>
+              <img src="img/chris-stevens-profile-crop.jpg">
             </div>
             <div class="grid-item">
-              <h2 class="grid-item-text">Emmy Stepien</h2>
-              <img class="main-page-grid-item-picture" src="img/emmy-stepien-profile-crop.jpg">
+              <h2>Emmy Stepien</h2>
+              <img src="img/emmy-stepien-profile-crop.jpg">
             </div>
           </div>
         </div>
       </section>
 
-      <section class="testimonials">
+      <section>
         <h1>Testimonials</h1>
-        <div class="testimonial-wrapper">
-          <div class="testimonial-carousel">
-            <div class="testimonial-item active">
-              <p class="testimonial-item-header">Good for first tattoos, memorial tattoos, tattoo thearpy, increadible
+        <div>
+          <div>
+            <div>
+              <p>Good for first tattoos, memorial tattoos, tattoo thearpy, increadible
                 artists, amazing sleeve</p>
               <p>WOW!!!!! Like want to talk about undiscovered hidden jem!!! Emmet was the best artist I have ever had
                 the
@@ -172,28 +175,28 @@
                 - Gavin Michael Gavazzi,<br>
                 April 23, 2022</p>
             </div>
-            <div class="testimonial-item">
-              <p class="testimonial-item-header">Amazing results</p>
+            <div>
+              <p>Amazing results</p>
               <p>Went to see Emmy yesterday for a flash tattoo that doubled as a scar cover up and she did absolutely
                 amazing. I've never had a tattoo artist as sweet and interactive as she was. Definitely check her
                 out!<br>
                 - Heather Beedle,<br>
                 April 16, 2022</p>
             </div>
-            <div class="testimonial-item">
-              <p class="testimonial-item-header"><br></p>
+            <div>
+              <p><br></p>
               <p>Great enviroment! Was very happy with my tattoo will definitely be back.<br>
                 - Breana Davis,<br>
                 March 16,2022</p>
             </div>
-            <div class="testimonial-item">
-              <p class="testimonial-item-header">Beautiful results</p>
+            <div>
+              <p>Beautiful results</p>
               <p>Definitely the best work I've ever seen and had first tattoo definitely recommend iron tusk<br>
                 - Blaine Bumpus,<br>
                 February 19, 2022</p>
             </div>
-            <div class="testimonial-item">
-              <p class="testimonial-item-header">Original art, Free consultation</p>
+            <div>
+              <p>Original art, Free consultation</p>
               <p>I'm loving this space and can't wait to see this buisness thrive in our community! The folks at Iron
                 Tusk
                 are welcoming and professional (but not stuffy) and I'm looking forward to doing buisness with them very
@@ -201,37 +204,34 @@
                 - Ashley Gillentine Wright,<br>
                 March 11, 2022</p>
             </div>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <span role="button">
+              <img aria-hidden="true" src="img/arrow-left.png" alt="Previous Slide Button">
+            </span>
+            <span role="button">
+              <img aria-hidden="true" src="img/arrow-right.png" alt="Next Slide Button">
+            </span>
           </div>
-          <ol class="slide-indicators">
-            <li class="slide-indicator"></li>
-            <li class="slide-indicator"></li>
-            <li class="slide-indicator"></li>
-            <li class="slide-indicator"></li>
-            <li class="slide-indicator"></li>
-          </ol>
-          <span class="slider-control-prev" role="button">
-            <img aria-hidden="true" src="img/arrow-left.png" alt="Previous Slide Button">
-          </span>
-          <span class="slider-control-next" role="button">
-            <img aria-hidden="true" src="img/arrow-right.png" alt="Next Slide Button">
-          </span>
-
         </div>
-        <a style="color: blue; z-index: 100;"
-          href="https://m.facebook.com/pg/irontusktattoos/reviews/?ref=page_internal&mt_nav=0">Read more on our
+        <a href="https://m.facebook.com/pg/irontusktattoos/reviews/?ref=page_internal&mt_nav=0">Read more on our
           Facebook</a>
       </section>
 
-      <section class="contact-us-main-page">
-        <div class="contact-us-main-page-grid">
-          <a class="contact-us-main-page-grid-item" href="tel:+19313141485">(931)314-1485</a>
-          <p class="contact-us-main-page-grid-item">irontuskart@gmail.com</p>
-          <a class="contact-us-main-page-grid-item"
+      <section>
+        <div>
+          <a href="tel:+19313141485">(931)314-1485</a>
+          <p>irontuskart@gmail.com</p>
+          <a
             href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus">
             215 E Main St, McMinnville, TN 37110</a>
-          <div class="contact-us-main-page-grid-item" id="map"><iframe
-              src="
-              https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus"
+          <div id="map"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus"
               style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -239,24 +239,30 @@
 
     </main>
 
-    <footer class="page-footer">
-      <p class="footer-text">Follow us on</p>
-      <div class="social-media">
-        <a href="https://m.facebook.com/irontusktattoos/" target="_blank"><img class="social-media-icon"
+    <footer>
+      <p>Follow us on</p>
+      <div>
+        <a href="https://m.facebook.com/irontusktattoos/" target="_blank"><img
             src="img/3225194_app_facebook_logo_media_popular_icon.svg" alt="Facebook icon"></a>
-        <a href="https://www.instagram.com/irontuskart/" target="_blank"><img class="social-media-icon"
-            src="img/3146786_instagram_logo_icon.svg" alt="Instagram icon"></a>
+        <a href="https://www.instagram.com/irontuskart/" target="_blank"><img src="img/3146786_instagram_logo_icon.svg"
+            alt="Instagram icon"></a>
       </div>
     </footer>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
   </div>
 
+  <!-- JavaScript file -->
   <script type="module" src="js/index.js"></script>
+  <!-- Polyfill -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <!-- Google Maps Api -->
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAb-csa2wE7NQt--2MHHN6b6EmWeyJlM&callback=initMap"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 </body>
 
