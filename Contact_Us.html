@@ -4,116 +4,148 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iron Tusk Tattoo</title>
   <link rel="shortcut icon" href="img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Rye&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script type="module" src="js/index.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Rye&display=swap">
+
 </head>
 
 <body class="page-container">
   <div class="content-wrapper">
     <header class="page-header">
-      <nav class="main-navigation page-header-item" id="mainNavbar">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menu-item" class="navigation-list-item navigation"
-              style="color:rgb(0, 0, 0)">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="Artists.html" role="menu-item" class="navigation-list-item navigation"
-              style="color:rgb(0, 0, 0)">Artists</a>
-          </li>
-          <li role="presentation">
-            <a href="Merchandise.html" rolerole="menu-item" class="navigation-list-item navigation"
-              style="color:rgb(0, 0, 0)">Merch</a>
-          </li>
-          <li role="presentation">
-            <a href="index.html" role="menu-item" class="navigation-list-item navigation"><img
-                class="iron-tusk-menu-logo" src="img/apple-touch-icon.png"
-                alt="Iron Tusk Tattoo's Logo link to home page"></a>
-          </li>
-          <li role="presentation">
-            <a href="FAQ.html" role="menu-item" class="navigation-list-item navigation"
-              style="color:rgb(0, 0, 0)">FAQ</a>
-          </li>
-          <li role="presentation">
-            <a href="About_Us.html" role="menu-item" class="navigation-list-item navigation"
-              style="color:rgb(0, 0, 0)">About</a>
-          </li>
-          <li role="presentation">
-            <a href="Contact_Us.html" role="menu-item" class="navigation-list-item navigation"
-              style="color:rgb(0, 0, 0)">Contact</a>
-          </li>
-        </ul>
-        <a href="javascript:void(0)" class="icon" onClick="navbarCollapse"><i class="fa fa-bars"></i></a>
-      </nav>
-    </header>
-    <main>
+      <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
 
-      <section class="contact-us-main-page">
-        <div class="contact-us-main-page-grid">
-          <div class="contact-us-main-page-grid-item">
-            <div class="main-page-location">
-              <h1>The shop is at</h1>
-              <h4>215 E Main St, McMinnville, TN 37110</h4>
-              <div id="map"><iframe
-                  src="
+            <a class="navbar-brand" href="index.html"><img src="img/apple-touch-icon.png" width="30" height="30"
+                class="d-inline-block align-top" alt="Iron Tusk Tattoo Logo">Iron Tusk Tattoo</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#myNavbar"
+              aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="Artists.html" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Artists</span></a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropwdown-item" href="artist_pages/chris_stephens.html">Chris Stephens</a></li>
+                    <li><a class="dropwdown-item" href="artist_pages/emmet_upton.html">Emmet Upton</a></li>
+                    <li><a class="dropwdown-item" href="artist_pages/emmy_stepien.html">Emmy Stepien</a></li>
+                    <li><a class="dropwdown-item" href="artist_pages/joshua_jones.html">Joshua Jones</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="Merchandise.html">Merch</a>
+                </li>
+
+                <!-- <a class="navbar-brand d-none d-lg-block" href="index.html"><img class="navbar-logo"
+                  src="img/apple-touch-icon.png"></a> -->
+
+                <li class="nav-item">
+                  <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="About_Us.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" href="Contact_Us.html">Contact</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+
+        <section class="contact-us-main-page">
+          <div class="contact-us-main-page-grid">
+            <div class="contact-us-main-page-grid-item">
+              <div class="main-page-location">
+                <h1>The shop is at</h1>
+                <h4>215 E Main St, McMinnville, TN 37110</h4>
+                <div id="map"><iframe
+                    src="
               https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus"
-                  style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-              <script async
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAb-csa2wE7NQt--2MHHN6b6EmWeyJlM&callback=initMap"></script>
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <script async
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAb-csa2wE7NQt--2MHHN6b6EmWeyJlM&callback=initMap"></script>
+              </div>
+            </div>
+            <div class="contact-us-main-page-grid-item">
+              <div class="main-page-phone">
+                <h1>Give us a call at</h1>
+                <a href="tel:+19313141485">(931)314-1485</a>
+              </div>
+              <div class="main-page-email-form">
+                <h1>Or email us</h1>
+                <p class="main-page-email-form-message">Please include your name and email, and if you include your
+                  phone
+                  number, let us know when it would be
+                  best to call or text. Also please let us know details on when and what we can do for you.</p>
+                <form action="" method="post">
+                  <label>Name: </label>
+                  <input type="text" required>
+                  <br>
+                  <label>Phone: </label>
+                  <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                  <br>
+                  <label>Email: </label>
+                  <input type="email" required>
+                  <br>
+                  <label>Message: </label>
+                  <textarea maxlength="500" required></textarea>
+                  <input type="submit" value="Send Message">
+                </form>
+              </div>
             </div>
           </div>
-          <div class="contact-us-main-page-grid-item">
-            <div class="main-page-phone">
-              <h1>Give us a call at</h1>
-              <a href="tel:+19313141485">(931)314-1485</a>
-            </div>
-            <div class="main-page-email-form">
-              <h1>Or email us</h1>
-              <p class="main-page-email-form-message">Please include your name and email, and if you include your phone
-                number, let us know when it would be
-                best to call or text. Also please let us know details on when and what we can do for you.</p>
-              <form action="" method="post">
-                <label>Name: </label>
-                <input type="text" required>
-                <br>
-                <label>Phone: </label>
-                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-                <br>
-                <label>Email: </label>
-                <input type="email" required>
-                <br>
-                <label>Message: </label>
-                <textarea maxlength="500" required></textarea>
-                <input type="submit" value="Send Message">
-              </form>
-            </div>
-          </div>
+        </section>
+
+      </main>
+      <footer class="page-footer">
+        <p class="footer-text">Follow us on</p>
+        <div class="social-media">
+          <a href="https://m.facebook.com/irontusktattoos/" target="_blank"><img class="social-media-icon"
+              src="img/3225194_app_facebook_logo_media_popular_icon.svg" alt="Facebook icon"></a>
+          <a href="https://www.instagram.com/irontuskart/" target="_blank"><img class="social-media-icon"
+              src="img/3146786_instagram_logo_icon.svg" alt="Instagram icon"></a>
         </div>
-      </section>
+      </footer>
 
-    </main>
-    <footer class="page-footer">
-      <p class="footer-text">Follow us on</p>
-      <div class="social-media">
-        <a href="https://m.facebook.com/irontusktattoos/" target="_blank"><img class="social-media-icon"
-            src="img/3225194_app_facebook_logo_media_popular_icon.svg" alt="Facebook icon"></a>
-        <a href="https://www.instagram.com/irontuskart/" target="_blank"><img class="social-media-icon"
-            src="img/3146786_instagram_logo_icon.svg" alt="Instagram icon"></a>
-      </div>
-    </footer>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   </div>
+  <!-- JavaScript file -->
+  <script type="module" src="js/index.js"></script>
+  <!-- Polyfill -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <!-- Google Maps API -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAb-csa2wE7NQt--2MHHN6b6EmWeyJlM&callback=initMap"></script>
+  <!-- For Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

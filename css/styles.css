@@ -1,7 +1,7 @@
 /* Variables */
 
 :root {
-  --white: rgb(255, 255, 255);
+  --white: rgba(255, 255, 255, 0.786);
   --header-background-color: rgb(141, 141, 141);
   --black: rgb(0, 0, 0);
   --header-shadow-color: rgb(80, 80, 80);
@@ -37,35 +37,55 @@ body {
 
 /* Header and Navbar Styling */
 
-/* header {
-  text-align: center;
-} */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
 
 .navbar {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
+  color: var(--white);
 }
 
-.navbar-brand img {
-  width: 60px;
+.navbar-brand {
+  color: var(--white);
 }
 
-@media screen and (min-width: 992px) {
-  .navbar-brand img {
-    width: 80px;
-  }
-
-  .nabar-brand {
-    margin-right: 0;
-    /* padding: 0 1em; */
-  }
+.navbar-brand:hover {
+  color: whitesmoke;
 }
 
-.navbar-nav {
-  align-items: center;
+.nav-link {
+  color: var(--white);
 }
 
-.navbar .navbar-nav .nav-link {
-  font-size: 2em;
-  padding: .5em 1em;
+.nav-link:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  color: whitesmoke;
+  text-shadow: 0 0 5px whitesmoke;
+}
+
+.active {
+  background-color: var(--white);
+}
+
+.active:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  color: black;
+  text-shadow: .5px .5px 5px var(--logo-shadow-color)
+}
+
+.navbar-toggler-icon-bg {
+  color: var(--white);
+}
+
+main {
+  margin-top: 1.5rem;
 }
