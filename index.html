@@ -9,8 +9,8 @@
   <link rel="shortcut icon" href="img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet"
@@ -24,10 +24,9 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-
-          <a class="navbar-brand" href="index.html"><img src="img/apple-touch-icon.png" width="30" height="30"
-              class="d-inline-block align-top" alt="Iron Tusk Tattoo Logo"> Iron Tusk Tattoo</a>
-
+          <a class="navbar-brand" href="index.html"><img src="img/apple-touch-icon.png" width="40" height="40"
+              class="d-inline-block align-top" alt="Iron Tusk Tattoo Logo"> Iron Tusk Tattoo
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#myNavbar"
             aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -78,181 +77,236 @@
       <section class="greeting-section">
         <div class="greeting-wrapper">
           <img src="img/iron-tusk-tattoo-logo.jpg" class="iron-tusk-banner-logo" alt="Banner Logo for Iron Tusk Tattoo">
-          <div class="page-greeting">
-            <h1>Welcome to Iron Tusk Tattoos!</h1>
-            <h1>We are an artist owned and operated shop located in downtown McMinnville, TN.</h1>
-          </div>
-          <div>
-            <h2>Shop hours are 11:00 AM to 8:00 PM Tuesday through Saturday.</h2>
-          </div>
-          <div>
-            <h3>Walk-ins are always welcome!</h3>
+          <div class="greeting-text">
+            <div class="greeting1">
+              <p>Welcome to Iron Tusk Tattoo!</p>
+            </div>
+            <div class="greeting2">
+              <p>We are an artist owned and operated shop located in downtown
+                McMinnville, TN.</p>
+            </div>
+            <div class="greeting3">
+              <p>Shop hours are 11:00 AM to 8:00 PM Tuesday through Saturday.
+              </p>
+            </div>
+            <div class="greeting4">
+              <p>Walk-ins are always welcome!</p>
+            </div>
           </div>
         </div>
+
       </section>
 
       <section class="events-section">
         <div class="events-wrapper">
-          <h1>EVENTS</h1>
-          <p>
-            <button class="btn events-button" type="button" data-bs-toggles="collapse" data-bs-target="#eventsCollapse"
-              aria-expanded="false" aria-controls="eventsCollapse">
-              Artist Competition - 07/09/22</button>
-          </p>
-          <div class="collapse.show" id="eventsCollapse">
-            <div class="card card-body">
-              <img src="img/artists-competition-crop.jpg">
-              <p>We are going to hold our inaugural inner shop tattoo competition! The competition will be held
-                Saturday,
-                July 9th at 11:30am. Each Iron Tusk tattoo artist will come up with an original full color
-                Neo-Traditional
-                tattoo design (designs will be released by May 21st ). We are asking for volunteers to be canvases.
-                If
-                you
-                are selected, your tattoo will be FREE! Lunch will be provided, and you will have an original tattoo
-                design on your body!</p>
-              <h3> To qualify you must:</h3>
-              <ol>
-                <li>Like and share <a
-                    href="https://m.facebook.com/irontusktattoos/photos/a.100534152553851/140875365186396/?type=3&source=48">this
-                    post</a> on Facebook</li>
-                <li>Come into the shop to submit your name and contact info by July 1st</li>
-                <li>Be able to sit for a tattoo for 6 - 8 hours</li>
-                <li>Have a great attitude and be ready for fun!</li>
-              </ol>
-              <h3>How the competition will work</h3>
-              <p>The people who will be canvases will be selected at random on July 2nd. The 4 people
-                selected will choose their tattoo artist at random and get the design the artist came up with. We
-                will
-                post the final tattoo without identifying the artist. We will leave voting open for 3 days. Whoever
-                wins
-                will get a trophy and bragging rights.</p>
+          <h1 class="events-section-header">EVENTS</h1>
+          <div class="accordion" id="eventAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button event-one-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#eventOne" aria-expanded="true" aria-controls="eventOne">Artist Competition -
+                  07/09/22</button>
+              </h2>
+              <div id="eventOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="eventAccordion">
+                <div class="accordion-body">
+                  <img class="event-img" src="img/artists-competition-crop.jpg">
+                  <p>We are going to hold our inaugural inner shop tattoo competition! <s>The competition will be held
+                      <u>Saturday, July 9th at 11:30am.</u></s> Each Iron Tusk tattoo artist will come up with an original full
+                    color Neo-Traditional tattoo design (designs will be released by <u>May 21st</u> ). We are asking for
+                    volunteers to be canvases. If you are selected, your tattoo will be <strong><u>FREE!</u></strong> Lunch will be provided,
+                    and you will have an original tattoo design on your body!</p>
+                  <p><strong><u>UPDATE:</u></strong> Given the enthusiasm and public response to the Tattoo Competition,
+                    we decided to bump it up to <u>Sunday, June 5th at 11:30 am</u>. We will randomly select our canvases
+                    <u>Saturday, May 28th</u>. The designs are still on display at the tattoo shop. If you're interested in
+                    being a canvas, time is running out!!! Drop by and put your name in the bucket. Thank you everyone
+                    who already signed up, and we do apologize for any confusion.</p>
+                  <h3 class="events-header"> To qualify you must:</h3>
+                  <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Like and share <a
+                        href="https://m.facebook.com/irontusktattoos/photos/a.100534152553851/140875365186396/?type=3&source=48">this
+                        post</a> on Facebook</li>
+                    <li class="list-group-item">Come into the shop to submit your name and contact info by July 1st</li>
+                    <li class="list-group-item">Be able to sit for a tattoo for 6 - 8 hours</li>
+                    <li class="list-group-item">Have a great attitude and be ready for fun!</li>
+                  </ol>
+                  <span><br></span>
+                  <h3 class="events-header">How the competition will work</h3>
+                  <p>The people who will be canvases will be selected at random on July 2nd. The 4 people
+                    selected will choose their tattoo artist at random and get the design the artist came up with. We
+                    will
+                    post the final tattoo without identifying the artist. We will leave voting open for 3 days. Whoever
+                    wins
+                    will get a trophy and bragging rights.</p>
+                  <img class="trophy-img" src="img/iron-tusk-trophy.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button event-two-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#eventTwo" aria-expanded="true" aria-controls="eventTwo">Placeholder Title</button>
+              </h2>
+              <div id="eventTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="eventAccordion">
+                <div class="accordion-body">
+                  <img class="event-img" src="img/artists-competition-crop.jpg">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button event-three-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#eventThree" aria-expanded="true" aria-controls="eventThree">Placeholder
+                  Title</button>
+              </h2>
+              <div id="eventThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="eventAccordion">
+                <div class="accordion-body">
+                  <img class="event-img" src="img/artists-competition-crop.jpg">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-  </div>
-  </section>
+      </section>
 
-  <section>
-    <div>
-      <h1>Meet Our Artists!</h1>
+      <section class="artists-section-main-page">
+        <div class="artists-section-wrapper">
+          <h1 class="artists-section-header">Meet Our Artists!</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col artist-grid-item">
+                <a href="Joshua_Jones.html">
+                  <h3>Joshua Jones</h3>
+                  <img class="artist-profile-main-page" src="img/joshua-jones-profile.jpg">
+                </a>
+              </div>
+              <div class="col artist-grid-item">
+                <h3>Chris "Critter" Stephens</h3>
+                <img class="artist-profile-main-page" src="img/chris-stevens-profile-crop.jpg">
+              </div>
+              <div class="col artist-grid-item">
+                <h3>Emmy Stepien</h3>
+                <img class="artist-profile-main-page" src="img/emmy-stepien-profile-crop.jpg">
+              </div>
+              <div class="col artist-grid-item">
+                <a href="Emmet_Upton.html">
+                  <h3>Emmet Upton</h3>
+                  <img class="artist-profile-main-page" src="img/emmet-upton-profile-crop.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section>
+        <h1>Testimonials</h1>
+        <div>
+          <div>
+            <div>
+              <p>Good for first tattoos, memorial tattoos, tattoo thearpy, increadible
+                artists, amazing sleeve</p>
+              <p>WOW!!!!! Like want to talk about undiscovered hidden jem!!! Emmet was the best artist I have ever had
+                the
+                pleasure of working with. Clean work, AMAZING COLORS, and so smooth I'm writing this review while in
+                the
+                chair!<br>
+                - Gavin Michael Gavazzi,<br>
+                April 23, 2022</p>
+            </div>
+            <div>
+              <p>Amazing results</p>
+              <p>Went to see Emmy yesterday for a flash tattoo that doubled as a scar cover up and she did absolutely
+                amazing. I've never had a tattoo artist as sweet and interactive as she was. Definitely check her
+                out!<br>
+                - Heather Beedle,<br>
+                April 16, 2022</p>
+            </div>
+            <div>
+              <p><br></p>
+              <p>Great enviroment! Was very happy with my tattoo will definitely be back.<br>
+                - Breana Davis,<br>
+                March 16,2022</p>
+            </div>
+            <div>
+              <p>Beautiful results</p>
+              <p>Definitely the best work I've ever seen and had first tattoo definitely recommend iron tusk<br>
+                - Blaine Bumpus,<br>
+                February 19, 2022</p>
+            </div>
+            <div>
+              <p>Original art, Free consultation</p>
+              <p>I'm loving this space and can't wait to see this buisness thrive in our community! The folks at Iron
+                Tusk
+                are welcoming and professional (but not stuffy) and I'm looking forward to doing buisness with them
+                very
+                soon.<br>
+                - Ashley Gillentine Wright,<br>
+                March 11, 2022</p>
+            </div>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <span role="button">
+              <img aria-hidden="true" src="img/arrow-left.png" alt="Previous Slide Button">
+            </span>
+            <span role="button">
+              <img aria-hidden="true" src="img/arrow-right.png" alt="Next Slide Button">
+            </span>
+          </div>
+        </div>
+        <a href="https://m.facebook.com/pg/irontusktattoos/reviews/?ref=page_internal&mt_nav=0">Read more on our
+          Facebook</a>
+      </section>
+
+      <section>
+        <div>
+          <a href="tel:+19313141485">(931)314-1485</a>
+          <p>irontuskart@gmail.com</p>
+          <a
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus">
+            215 E Main St, McMinnville, TN 37110</a>
+          <div id="map"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Follow us on</p>
       <div>
-        <div>
-          <a href="Emmet_Upton.html">
-            <h2>Emmet Upton</h2>
-            <img src="img/emmet-upton-profile-crop.jpg">
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="Joshua_Jones.html">
-            <h2>Joshua Jones</h2>
-            <img src="img/joshua-jones-profile.jpg">
-          </a>
-        </div>
-        <div class="grid-item">
-          <h2>Chris "Critter" Stephens</h2>
-          <img src="img/chris-stevens-profile-crop.jpg">
-        </div>
-        <div class="grid-item">
-          <h2>Emmy Stepien</h2>
-          <img src="img/emmy-stepien-profile-crop.jpg">
-        </div>
+        <a href="https://m.facebook.com/irontusktattoos/" target="_blank"><img
+            src="img/3225194_app_facebook_logo_media_popular_icon.svg" alt="Facebook icon"></a>
+        <a href="https://www.instagram.com/irontuskart/" target="_blank"><img src="img/3146786_instagram_logo_icon.svg"
+            alt="Instagram icon"></a>
       </div>
-    </div>
-  </section>
-
-  <section>
-    <h1>Testimonials</h1>
-    <div>
-      <div>
-        <div>
-          <p>Good for first tattoos, memorial tattoos, tattoo thearpy, increadible
-            artists, amazing sleeve</p>
-          <p>WOW!!!!! Like want to talk about undiscovered hidden jem!!! Emmet was the best artist I have ever had
-            the
-            pleasure of working with. Clean work, AMAZING COLORS, and so smooth I'm writing this review while in
-            the
-            chair!<br>
-            - Gavin Michael Gavazzi,<br>
-            April 23, 2022</p>
-        </div>
-        <div>
-          <p>Amazing results</p>
-          <p>Went to see Emmy yesterday for a flash tattoo that doubled as a scar cover up and she did absolutely
-            amazing. I've never had a tattoo artist as sweet and interactive as she was. Definitely check her
-            out!<br>
-            - Heather Beedle,<br>
-            April 16, 2022</p>
-        </div>
-        <div>
-          <p><br></p>
-          <p>Great enviroment! Was very happy with my tattoo will definitely be back.<br>
-            - Breana Davis,<br>
-            March 16,2022</p>
-        </div>
-        <div>
-          <p>Beautiful results</p>
-          <p>Definitely the best work I've ever seen and had first tattoo definitely recommend iron tusk<br>
-            - Blaine Bumpus,<br>
-            February 19, 2022</p>
-        </div>
-        <div>
-          <p>Original art, Free consultation</p>
-          <p>I'm loving this space and can't wait to see this buisness thrive in our community! The folks at Iron
-            Tusk
-            are welcoming and professional (but not stuffy) and I'm looking forward to doing buisness with them
-            very
-            soon.<br>
-            - Ashley Gillentine Wright,<br>
-            March 11, 2022</p>
-        </div>
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-        <span role="button">
-          <img aria-hidden="true" src="img/arrow-left.png" alt="Previous Slide Button">
-        </span>
-        <span role="button">
-          <img aria-hidden="true" src="img/arrow-right.png" alt="Next Slide Button">
-        </span>
-      </div>
-    </div>
-    <a href="https://m.facebook.com/pg/irontusktattoos/reviews/?ref=page_internal&mt_nav=0">Read more on our
-      Facebook</a>
-  </section>
-
-  <section>
-    <div>
-      <a href="tel:+19313141485">(931)314-1485</a>
-      <p>irontuskart@gmail.com</p>
-      <a
-        href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus">
-        215 E Main St, McMinnville, TN 37110</a>
-      <div id="map"><iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
-
-  </main>
-
-  <footer>
-    <p>Follow us on</p>
-    <div>
-      <a href="https://m.facebook.com/irontusktattoos/" target="_blank"><img
-          src="img/3225194_app_facebook_logo_media_popular_icon.svg" alt="Facebook icon"></a>
-      <a href="https://www.instagram.com/irontuskart/" target="_blank"><img src="img/3146786_instagram_logo_icon.svg"
-          alt="Instagram icon"></a>
-    </div>
-  </footer>
+    </footer>
 
   </div>
+
+  <!-- For Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
   <!-- JavaScript file -->
   <script type="module" src="js/index.js"></script>
   <!-- Polyfill -->
@@ -260,10 +314,7 @@
   <!-- Google Maps API -->
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAb-csa2wE7NQt--2MHHN6b6EmWeyJlM&callback=initMap"></script>
-  <!-- For Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
