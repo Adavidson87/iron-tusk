@@ -3,7 +3,7 @@
 /* --------------------- */
 
 :root {
-  --white: rgba(255, 255, 255, 0.786);
+  --white: rgb(255, 255, 255);
   --header-background-color: rgb(141, 141, 141);
   --black: rgb(0, 0, 0);
   --header-shadow-color: rgb(80, 80, 80);
@@ -17,6 +17,7 @@
   --brown: rgb(124, 90, 11);
   --fadedbrown: rgba(250, 224, 66, .2);
   --lightgrey: rgb(211, 211, 211);
+  --background-color-header: rgb(33, 37, 41);
 }
 
 /* -------------------------- */
@@ -33,7 +34,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
-  background-color: var(--white);
+  background-color: rgba(184, 135, 11, 0.72);
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -50,21 +51,16 @@ header {
   left: 0;
   padding: 0;
   font-size: 1.3rem;
+  z-index: 100;
 }
 
 .navbar {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
-  color: var(--white);
 }
 
 .navbar-brand {
-  color: var(--white);
   font-size: 1.5rem;
-}
-
-.navbar-brand:hover {
-  color: whitesmoke;
 }
 
 @media screen and (max-width: 360px) {
@@ -74,10 +70,6 @@ header {
   }
 }
 
-.nav-link {
-  color: var(--white);
-}
-
 .nav-link:hover {
   text-decoration: underline;
   font-weight: 700;
@@ -85,19 +77,26 @@ header {
 }
 
 .active {
-  background-color: var(--white);
+  background-color: rgba(184, 135, 11, 0.656);
+  color: black;
 }
 
 .active:hover {
   text-decoration: underline;
   font-weight: 700;
   color: black;
-  text-shadow: .5px .5px 5px var(--logo-shadow-color)
+  text-shadow: .5px .5px 5px black;
 }
 
 .navbar-toggler-icon-bg {
   color: var(--white);
 }
+
+/* ----------------------------------------- */
+/* ----- Footer and Social Media links ----- */
+/* ----------------------------------------- */
+
+
 
 /* ------------------------ */
 /* ----- Main Section ----- */
@@ -124,6 +123,7 @@ main {
 /* -------------------------------------- */
 
 .greeting-section {
+  /* background-color: rgba(53, 157, 157, 0.803); */
   background-color: silver;
 }
 
@@ -131,7 +131,7 @@ main {
   border-bottom-style: solid;
   border-color: black;
   border-bottom-width: .2em;
-  padding: 1.5em;
+  /* padding: 1.5em; */
 }
 
 .iron-tusk-banner-logo {
@@ -139,13 +139,17 @@ main {
   border-bottom-style: solid;
   border-color: black;
   border-bottom-width: .2em;
+  background-color: whitesmoke;
 }
 
 .greeting1 {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   font-size: 2.5rem;
-  font-weight: 600
+  font-weight: 600;
+  background-color: darkgoldenrod;
+  color: rgba(54, 20, 146, 0.92);
+  margin-top: .5em;
 }
 
 .greeting2 {
@@ -178,12 +182,25 @@ main {
   border-bottom-style: solid;
   border-color: black;
   border-bottom-width: .2em;
-  padding: 1.5em;
+  padding-bottom: 1.5em;
+  /* border-width: 1px; */
+  background-color: whitesmoke;
+  /* background-color: rgb(149, 53, 83); */
+  padding-top: 1em;
+}
+
+.events-wrapper {
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .events-section-header {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
+  margin-top: 0;
+  color: darkgoldenrod;
+  background-color: rgba(54, 20, 146, 0.92);
 }
 
 .events-header {
@@ -227,7 +244,17 @@ main {
   border-bottom-style: solid;
   border-color: black;
   border-bottom-width: .2em;
-  padding: 1.5em;
+  padding-top: 1em;
+}
+
+.artists-section-header {
+  margin-top: 0;
+  background-color: darkgoldenrod;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(54, 20, 146, 0.92);
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
 }
 
 .artist-grid-item {
@@ -238,4 +265,45 @@ main {
   border-radius: 50%;
   max-width: 250px;
   height: 250px;
+}
+
+/* -------------------------------- */
+/* ----- Testimonials Section ----- */
+/* -------------------------------- */
+
+.testimonials-section {
+  background-color: whitesmoke;
+  border-bottom-style: solid;
+  border-color: black;
+  border-bottom-width: .2em;
+  padding-top: 1em;
+}
+
+.testimonials-header {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
+  margin-top: 0;
+  /* color: rgba(245, 245, 245, 0.856); */
+  color: darkgoldenrod;
+  background-color: rgba(54, 20, 146, 0.92);
+}
+
+/* ------------------------------------- */
+/* ----- Main page contact and map ----- */
+/* ------------------------------------- */
+
+.main-page-contact-section {
+  background-color: silver;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.main-page-contact-header {
+  margin-top: 0;
+  background-color: darkgoldenrod;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(54, 20, 146, 0.92);
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
 }
