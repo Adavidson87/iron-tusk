@@ -3,21 +3,9 @@
 /* --------------------- */
 
 :root {
-  --white: rgb(255, 255, 255);
-  --header-background-color: rgb(141, 141, 141);
-  --black: rgb(0, 0, 0);
-  --header-shadow-color: rgb(80, 80, 80);
-  --header-hover-shadow: rgb(119, 119, 119);
-  --logo-shadow-color: rgb(160, 160, 160);
-  --links: rgb(0, 26, 196);
-  --visited-links: rgb(5, 103, 110);
-  --active-links: rgb(72, 156, 121);
-  --fadedgold: rgba(250, 224, 66, .45);
-  --gold: rgb(250, 224, 66);
-  --brown: rgb(124, 90, 11);
-  --fadedbrown: rgba(250, 224, 66, .2);
-  --lightgrey: rgb(211, 211, 211);
-  --background-color-header: rgb(33, 37, 41);
+--header-color: rgb(196, 135, 84);
+--background-color: rgb(48, 45, 34);
+--primary-text-color: rgb(165, 145, 111);
 }
 
 /* -------------------------- */
@@ -34,14 +22,15 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
-  background-color: rgb(33, 37, 41);
-  color: rgba(255, 255, 255, 0.55);
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-image: url("img\store-front-banner-no-filter.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+}
+
+a {
+  color: #688eff;
 }
 
 /* ------------------------------------- */
@@ -61,6 +50,10 @@ header {
 .navbar {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  text-shadow: 1px 1px 10px black;
 }
 
 .navbar-brand {
@@ -80,9 +73,9 @@ header {
   color: whitesmoke;
 }
 
-.active {
-  background-color: rgba(184, 135, 11, 0.656);
-  color: black;
+.active-navbar {
+  background-color: #6c4d0074;
+  color: #f4e9d0;
 }
 
 .active:hover {
@@ -100,6 +93,12 @@ header {
 /* ----- Footer and Social Media links ----- */
 /* ----------------------------------------- */
 
+footer {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: black;
+  text-shadow: 1px 1px 10px black;
+}
 
 
 /* ------------------------ */
@@ -114,6 +113,7 @@ main {
   margin-right: auto;
   max-width: 100%;
   margin-top: 1.5em;
+  text-shadow: 1px 1px 10px black;
 }
 
 .divider {
@@ -131,7 +131,7 @@ main {
   right: 5%;
   width: 90%;
   height: 1px;
-  background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+  background-image: linear-gradient(to right, transparent, rgb(86, 87, 91), transparent);
 }
 
 .div-stopper:after {
@@ -143,7 +143,7 @@ main {
   width: 14px;
   height: 12px;
   background-color: rgba(197, 197, 197, 0.673);
-  border-left: 1px solid rgb(48, 49, 51);
+  border-left: 1px solid rgb(82, 83, 87);
   border-right: 1px solid rgb(48, 49, 51);
 }
 
@@ -152,68 +152,78 @@ main {
 /* -------------------------------------- */
 
 .greeting-text {
-  padding: 1.5em;
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
+  color: var(--header-color);
+  text-shadow: 5px 5px 7px black;
 }
 
 .iron-tusk-banner-logo {
   width: 100%;
   padding-top: 2em;
-}
-
-.greeting1 {
-  font-size: 2.5rem;
-}
-
-.greeting2 {
-  font-size: 2rem;
-}
-
-.greeting3 {
-  font-size: 1.5rem;
-}
-
-.greeting4 {
-  font-size: 1.3rem;
-  text-decoration: underline;
+  box-shadow: 1px 1px 11px 3px black;
 }
 
 /* -------------------------- */
 /* ----- Events Section ----- */
 /* -------------------------- */
 
-.events-section {
-  /* padding-bottom: 1.5em; */
-  padding-top: 1em;
-}
-
-.events-wrapper {
+.events-section-wrapper {
   margin-left: auto;
   margin-right: auto;
+  max-width: 992px;
+}
+
+.event-text {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .events-section-header {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
-  margin-top: 0;
-  color: rgb(255, 94, 0);
+  color: var(--header-color);
+  text-shadow: 5px 5px 7px black;
 }
 
 .events-header {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
+  color: var(--header-color);
+  text-shadow: 1px 1px 10px black;
   text-decoration: underline;
-  color: rgb(255, 94, 0);
+}
+
+.event-text {
+  text-shadow: 1px 1px 10px black;
 }
 
 .event-img {
   width: 100%;
+  box-shadow: .5px .5px 11px 2px black;
+  margin-bottom: 10px
 }
 
 .trophy-img {
-  max-width: 250px;
-  padding-bottom: 1em;
+  max-width: 225px;
+  box-shadow: 2px 2px 11px 2px black;
+}
+
+.list-group-item {
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  text-align: left;
+  padding-left: 2em;
+}
+
+.event-rules {
+  max-width: 496px;
+  /* box-shadow: .5px .5px 11px 2px black; */
+}
+
+.event-trophy {
+  max-width: 496px;
+  
 }
 
 
@@ -222,17 +232,13 @@ main {
 /* ----- Main Page Artists Section ----- */
 /* ------------------------------------- */
 
-.artists-section-main-page {
-  font-family: 'Oleo Script Swash Caps', cursive;
-  font-family: 'Rye', cursive;
-  padding-top: 1em;
-}
+
 
 .artists-section-header {
-  margin-top: 0;
-  color: rgb(255, 94, 0);
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
+  color: var(--header-color);
+  text-shadow: 5px 5px 7px black;
 }
 
 .artist-grid-item {
@@ -247,6 +253,61 @@ main {
   border-radius: 50%;
   max-width: 250px;
   height: 250px;
+  box-shadow: 2px 2px 11px 2px black;
+}
+
+.artist-link {
+  color: var(--header-color);
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
+  color: var(--header-color);
+  text-shadow: 1px 1px 10px black;
+}
+
+.artist-link:hover {
+  font-weight: bold;
+  color: rgb(250, 185, 90);
+}
+
+/* ---------------------------------- */
+/* ----- Artists Work Main Page ----- */
+/* ---------------------------------- */
+
+.recent-work {
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recent-work-header {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
+  color: var(--header-color);
+  text-shadow: 5px 5px 7px black;
+}
+
+.tattoo-picture {
+  max-width: 320px;
+  padding: 5px;
+  border-style: solid;
+  margin: 10px;
+  background-color: whitesmoke;
+  border-width: 5px;
+  box-shadow: 2px 2px 11px 5px rgb(0, 0, 0);
+}
+
+.accordion-button {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cb9266 !important;
+  background-color: #423419 !important;
+  border-width: 3px;
+  border-style: solid;
+  font-family: 'Oleo Script Swash Caps', cursive !important;
+  font-family: 'Rye', cursive !important;
+  text-shadow: 5px 5px 7px black;
+  font-size: x-large;
 }
 
 /* -------------------------------- */
@@ -255,7 +316,8 @@ main {
 
 .testimonials-section {
   padding-top: 1em;
-  height: 564px;
+  padding-bottom: 1em;
+  height: 425px;
 }
 
 .testimonial-carousel-wrapper {
@@ -267,30 +329,35 @@ main {
 .testimonials-header {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
-  margin-top: 0;
-  color: rgb(255, 94, 0);
+  color: var(--header-color);
+  text-shadow: 5px 5px 7px black;
+}
+
+.carousel-inner {
+  height: 300px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .carousel-item {
-  height: 25em;
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  color: rgba(54, 20, 146, 0.92);
-  font-weight: 600;
-  background-color: rgba(184, 135, 11, 0.656);
+  max-height: 20em;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-shadow: 1px 1px 10px black;
 }
 
 .carousel-emphasis {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   font-size: 1.5rem;
+  text-shadow: 1px 1px 10px black;
+  text-decoration: underline;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: black;
+.testimonial-fb-link {
+  margin-top: 10px;
+  text-shadow: 1px 1px 10px black;
 }
 
 
@@ -302,15 +369,17 @@ main {
   /* background-color: whitesmoke; */
   padding-top: 1em;
   padding-bottom: 1em;
+  text-shadow: 1px 1px 10px black;
 }
 
 .main-page-contact-header {
   margin-top: 0;
-  color: rgb(255, 94, 0);
+  color: var(--header-color);
   /* background-color: rgba(54, 20, 146, 0.92); */
   margin-left: auto;
   margin-right: auto;
   /* color: rgba(54, 20, 146, 0.92); */
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
+  text-shadow: 1px 1px 10px black;
 }
