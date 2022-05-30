@@ -9,8 +9,8 @@
   <link rel="shortcut icon" href="img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet"
@@ -20,118 +20,177 @@
 
 <body class="page-container">
   <div class="content-wrapper">
-    <header class="page-header">
-      <header>
-        <nav class="navbar navbar-expand-lg bg-dark">
-          <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img\apple-touch-icon.png" width="40" height="40"
+              class="d-inline-block align-top" alt="Iron Tusk Tattoo Logo"> Iron Tusk Tattoo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+            aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <a class="navbar-brand" href="index.html"><img src="img/apple-touch-icon.png" width="30" height="30"
-                class="d-inline-block align-top" alt="Iron Tusk Tattoo Logo">Iron Tusk Tattoo</a>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#myNavbar"
-              aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <li class="nav-item">
+                <a class="nav-link active-navbar" aria-current="page" href="index.html">Home <span
+                    class="sr-only"></span></a>
+              </li>
 
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Artists.html" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Artists</span></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="artist_pages/chris_stephens.html">Chris Stephens</a></li>
+                  <li><a class="dropdown-item" href="artist_pages/emmet_upton.html">Emmet Upton</a></li>
+                  <li><a class="dropdown-item" href="artist_pages/emmy_stepien.html">Emmy Stepien</a></li>
+                  <li><a class="dropdown-item" href="artist_pages/joshua_jones.html">Joshua Jones</a></li>
+                </ul>
+              </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Home <span class="sr-only"></span></a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Merchandise.html">Merch</a>
+              </li>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="Artists.html" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">Artists</span></a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropwdown-item" href="artist_pages/chris_stephens.html">Chris Stephens</a></li>
-                    <li><a class="dropwdown-item" href="artist_pages/emmet_upton.html">Emmet Upton</a></li>
-                    <li><a class="dropwdown-item" href="artist_pages/emmy_stepien.html">Emmy Stepien</a></li>
-                    <li><a class="dropwdown-item" href="artist_pages/joshua_jones.html">Joshua Jones</a></li>
-                  </ul>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+              </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="Merchandise.html">Merch</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About_Us.html">About</a>
+              </li>
 
-                <!-- <a class="navbar-brand d-none d-lg-block" href="index.html"><img class="navbar-logo"
-                  src="img/apple-touch-icon.png"></a> -->
+              <li class="nav-item">
+                <a class="nav-link" href="Contact_Us.html">Contact</a>
+              </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="FAQ.html">FAQ</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="About_Us.html">About</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link active" href="Contact_Us.html">Contact</a>
-                </li>
-
-              </ul>
-            </div>
+            </ul>
           </div>
-        </nav>
-      </header>
-      <main>
+        </div>
+      </nav>
+    </header>
+    <main>
 
-        <section class="contact-us-main-page">
-          <div class="contact-us-main-page-grid">
-            <div class="contact-us-main-page-grid-item">
-              <div class="main-page-location">
-                <h1>The shop is at</h1>
-                <h4>215 E Main St, McMinnville, TN 37110</h4>
-                <div id="map"><iframe
-                    src="
-              https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308369924744!2d-85.77322634822607!3d35.681167080097154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1651877006267!5m2!1sen!2sus"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                <script async
-                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAb-csa2wE7NQt--2MHHN6b6EmWeyJlM&callback=initMap"></script>
+      <section class="main-page-contact-section">
+        <div class="row">
+          <h1 class="main-page-contact-header">Set up an appointment by</h1>
+          <div class="main-page-contact-info">
+            <div class="row">
+              <div class="col">
+                <div>
+                  <p>Coming in, we're at: <br><a href="https://goo.gl/maps/uh81LBpVwM3TPYPh6" target="_blank"
+                      rel="noopener noreferrer">215 E Main St, McMinnville TN, 37110</a></p>
+                </div>
               </div>
-            </div>
-            <div class="contact-us-main-page-grid-item">
-              <div class="main-page-phone">
-                <h1>Give us a call at</h1>
-                <a href="tel:+19313141485">(931)314-1485</a>
+              <div class="col">
+                <p>Giving us a call at:<br><a href="tel:+19313141485">(931)314-1485</a></p>
               </div>
-              <div class="main-page-email-form">
-                <h1>Or email us</h1>
-                <p class="main-page-email-form-message">Please include your name and email, and if you include your
-                  phone
-                  number, let us know when it would be
-                  best to call or text. Also please let us know details on when and what we can do for you.</p>
-                <form action="" method="post">
-                  <label>Name: </label>
-                  <input type="text" required>
-                  <br>
-                  <label>Phone: </label>
-                  <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-                  <br>
-                  <label>Email: </label>
-                  <input type="email" required>
-                  <br>
-                  <label>Message: </label>
-                  <textarea maxlength="500" required></textarea>
-                  <input type="submit" value="Send Message">
-                </form>
+              <div class="col">
+                <p>Or Emailing us:<br><a href="mailto:irontuskart@gmail.com">irontuskart@gmail.com</a></p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-      </main>
-      <footer class="page-footer">
-        <p class="footer-text">Follow us on</p>
-        <div class="social-media">
-          <a href="https://m.facebook.com/irontusktattoos/" target="_blank"><img class="social-media-icon"
-              src="img/3225194_app_facebook_logo_media_popular_icon.svg" alt="Facebook icon"></a>
-          <a href="https://www.instagram.com/irontuskart/" target="_blank"><img class="social-media-icon"
-              src="img/3146786_instagram_logo_icon.svg" alt="Instagram icon"></a>
+        <div class="row">
+          <div class="col map-col">
+            <div class="map-container">
+              <div class="google-map"><iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8306600063916!2d-85.77322098390974!3d35.68117143758115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886131ccd2a678b9%3A0x9083783f43021e90!2sIron%20Tusk%20Art%20Co.%20LLC!5e0!3m2!1sen!2sus!4v1653930821519!5m2!1sen!2sus"
+                  width="100%" min-width="320" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col contact-form-container">
+            <div class="contact-form-container-inner">
+              <form class="main-page-contact-form" id="contact-form">
+                <div class="form-group">
+                  <label for="name">Name: </label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+                    style="max-width: 500px">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email: </label>
+                  <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email"
+                    style="max-width: 500px">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject: </label>
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter email subject"
+                    style="max-width: 500px">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message: </label>
+                  <textarea id="message" name="message" class="form-control" placeholder="Enter your message here..."
+                    style="max-width: 800px; height: 150px;">Your message here...</textarea>
+                </div>
+                <!-- <div class="input-group mb-3">
+                  <input type="file" class="form-control" id="attachment" aria-describedby="inputGroupFile" aria-label="Upload" style="max-width: 730px;">
+                  <button class="btn btn-outline-secondary" type="button" for="attachment">Upload</button>
+                </div> -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <div class="container-fluid mx-0 px-0">
+      <footer class="text-center text-white bg-dark">
+        <div class="container">
+          <section class="">
+            <div class="row text-center d-flex justify-content-center pt-3">
+              <div class="col-md-2">
+                <p class="text-uppercase font-weight-bold">
+                  <a href="About_Us.html" class="text-white">About Us</a>
+                </p>
+              </div>
+              <div class="col-md-2">
+                <p class="text-uppercase font-weight-bold">
+                  <a href="Artists.html" class="text-white">Artists</a>
+                </p>
+              </div>
+              <div class="col-md-2">
+                <p class="text-uppercase font-weight-bold">
+                  <a href="FAQ.html" class="text-white">FAQ</a>
+                </p>
+              </div>
+              <div class="col-md-2">
+                <p class="text-uppercase font-weight-bold">
+                  <a href="Merchandise.html" class="text-white">Merch</a>
+                </p>
+              </div>
+              <div class="col-md-2">
+                <p class="text-uppercase font-weight-bold">
+                  <a href="Contact_Us.html" class="text-white">Contact</a>
+                </p>
+              </div>
+            </div>
+          </section>
+          <hr class="my-2">
+          <section class="" style="margin: 0 !important; padding: 0 !important;">
+            <div class="row d-flex justify-content-center" style="margin: 0 !important; padding: 0 !important;">
+              <div class="col-lg-8 text-center" style="margin: 0 !important; padding: 0 !important;">
+                Follow us on social media
+              </div>
+            </div>
+          </section>
+          <section class="text-center mb-3" style="margin: 0 !important; padding: 0;">
+            <a href="https://www.facebook.com/irontusktattoos/"><i class="fab fa-facebook-f"><img
+                  src="img/3225194_app_facebook_logo_media_popular_icon.svg" style="width: 30px;  margin: 5px;"
+                  alt="facebook icon"></i></a>
+            <a href="https://www.instagram.com/irontuskart/"><i class="fab fa-instagram"><img
+                  src="img/3146786_instagram_logo_icon.svg" style="width: 30px; margin: 5px;"
+                  alt="instagram icon"></i></a>
+          </section>
+        </div>
+        <div class="text-center p-3" style="margin: 0; padding: 0 !important;">© 2022 Copyright Iron Tusk Art Co, LLC
         </div>
       </footer>
+    </div>
 
 
   </div>
