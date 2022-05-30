@@ -226,13 +226,9 @@ main {
   
 }
 
-
-
 /* ------------------------------------- */
 /* ----- Main Page Artists Section ----- */
 /* ------------------------------------- */
-
-
 
 .artists-section-header {
   font-family: 'Oleo Script Swash Caps', cursive;
@@ -317,7 +313,7 @@ main {
 .testimonials-section {
   padding-top: 1em;
   padding-bottom: 1em;
-  height: 425px;
+  height: 600px;
 }
 
 .testimonial-carousel-wrapper {
@@ -334,7 +330,7 @@ main {
 }
 
 .carousel-inner {
-  height: 300px;
+  height: 400px;
   max-width: 100%;
   display: flex;
   align-items: center;
