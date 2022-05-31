@@ -3,10 +3,29 @@
 /* --------------------- */
 
 :root {
+  --link-color: rgb(104, 142, 255);
+  --link-hover-1: rgb(164, 187, 254);
+  --link-hover-2: rgb(250, 185, 90);
   --header-color: rgb(196, 135, 84);
   --background-color: rgb(48, 45, 34);
+  --background-color-2: rgb(245, 245, 245);
+  --background-dark: rgb(33, 37, 41);
   --primary-text-color: rgb(165, 145, 111);
+  --text-shadow-dark: rgb(0, 0, 0);
+  --text-shadow-light: rgb(142, 141, 141);
+  --div-trans-bg-img: rgb(86, 87, 91);
+  --div-stop-bg-color: rgba(255, 199, 125, 0.253);
+  --div-stop-bl: rgb(82, 83, 87);
+  --div-stop-br: rgb(48, 49, 51);
+
+  /* --header-color: rgb(255, 115, 0); */
+  /* --background-color: rgba(0, 164, 252, 0.233); */
+  /* --primary-text-color: rgb(255, 187, 110); */
 }
+
+
+
+
 
 /* -------------------------- */
 /* ----- Common Styling ----- */
@@ -31,8 +50,18 @@ body {
 }
 
 a {
-  color: #688eff;
+  color: var(--link-color);
+  transition: transform .3s ease;
 }
+
+a:hover {
+  color: var(--link-hover-1);
+  transform: scale(1.5);
+}
+
+
+
+
 
 /* ------------------------------------- */
 /* ----- Header and Navbar Styling ----- */
@@ -54,11 +83,16 @@ header {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: black;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: .5px .5px 5px var(--text-shadow-light);
 }
 
 .navbar-brand {
   font-size: 1.5rem;
+  transition: transform .5s ease;
+}
+
+.nav-link {
+  transition: transform .3s ease;
 }
 
 @media screen and (max-width: 360px) {
@@ -68,55 +102,37 @@ header {
   }
 }
 
-.nav-link:hover {
-  text-decoration: underline;
-  font-weight: 700;
-  color: whitesmoke;
+.nav-link:hover, .navbar-brand:hover {
+  font-weight: bolder;
+  transform: scale(1.08);
 }
 
 .active-navbar {
-  background-color: #6c4d0074;
-  color: #f4e9d0;
+  text-decoration: underline;
+  font-weight: bolder;
 }
 
 .active:hover {
   text-decoration: underline;
   font-weight: 700;
-  color: black;
-  text-shadow: .5px .5px 5px black;
+  text-shadow: .5px .5px 5px var(--text-shadow-light);
 }
 
-.navbar-toggler-icon-bg {
-  color: var(--white);
-}
+
+
 
 /* ----------------------------------------- */
 /* ----- Footer and Social Media links ----- */
 /* ----------------------------------------- */
 
 footer {
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-color: black;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 10px var(--text-shadow-dark);
   width: 100%;
+  margin-top: 1rem;
+  position: absolute;
 }
 
-@media screen and (min-width: 1200px) {
-  footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    font-size: 1.3rem;
-    z-index: 100;
-  }
 
-  main {
-    padding-bottom: 10rem;
-  }
-}
 
 
 /* ------------------------ */
@@ -131,7 +147,8 @@ main {
   margin-right: auto;
   max-width: 100%;
   margin-top: 1.5em;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: .5px .5px 4px var(--text-shadow-dark);
+  margin-bottom: 1em;
 }
 
 .divider {
@@ -149,7 +166,7 @@ main {
   right: 5%;
   width: 90%;
   height: 1px;
-  background-image: linear-gradient(to right, transparent, rgb(86, 87, 91), transparent);
+  background-image: linear-gradient(to right, transparent, var(--div-trans-bg-img), transparent);
 }
 
 .div-stopper:after {
@@ -160,10 +177,13 @@ main {
   left: calc(50% - 7px);
   width: 14px;
   height: 12px;
-  background-color: rgba(197, 197, 197, 0.673);
-  border-left: 1px solid rgb(82, 83, 87);
-  border-right: 1px solid rgb(48, 49, 51);
+  background-color: var(--div-stop-bg-color);
+  border-left: 1px solid var(--div-stop-bl);
+  border-right: 1px solid var(--div-stop-br);
 }
+
+
+
 
 /* -------------------------------------- */
 /* ----- Main Page Greeting Section ----- */
@@ -173,14 +193,17 @@ main {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   color: var(--header-color);
-  text-shadow: 5px 5px 7px black;
+  text-shadow: 2px 2px 4px var(--text-shadow-dark);
 }
 
 .iron-tusk-banner-logo {
   width: 100%;
   padding-top: 2em;
-  box-shadow: 1px 1px 11px 3px black;
+  box-shadow: 1px 1px 11px 3px var(--text-shadow-dark);
 }
+
+
+
 
 /* -------------------------- */
 /* ----- Events Section ----- */
@@ -201,31 +224,26 @@ main {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   color: var(--header-color);
-  text-shadow: 5px 5px 7px black;
+  text-shadow: 2px 2px 4px var(--text-shadow-dark);
 }
 
 .events-header {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   color: var(--header-color);
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 2px 2px 5px var(--text-shadow-dark);
   text-decoration: underline;
-}
-
-.event-text {
-  text-shadow: 1px 1px 10px black;
 }
 
 .event-img {
   width: 100%;
-  box-shadow: .5px .5px 11px 2px black;
+  box-shadow: .5px .5px 11px 2px var(--text-shadow-dark);
   margin-bottom: 10px;
-  /* margin: 15px; */
 }
 
 .trophy-img {
   max-width: 225px;
-  box-shadow: 2px 2px 11px 2px black;
+  box-shadow: 2px 2px 11px 2px var(--text-shadow-dark);
 }
 
 .list-group-item {
@@ -233,7 +251,6 @@ main {
   background-color: var(--background-color);
   text-align: left;
   padding-left: 2em;
-  /* width: 400px; */
 }
 
 @media screen and (min-width: 992px) {
@@ -244,12 +261,10 @@ main {
 
 .event-rules {
   max-width: 496px;
-  /* box-shadow: .5px .5px 11px 2px black; */
 }
 
 .event-trophy {
   max-width: 496px;
-
 }
 
 .event-col-1 {
@@ -260,6 +275,9 @@ main {
   max-width: 700px;
 }
 
+
+
+
 /* ------------------------------------- */
 /* ----- Main Page Artists Section ----- */
 /* ------------------------------------- */
@@ -268,22 +286,23 @@ main {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   color: var(--header-color);
-  text-shadow: 5px 5px 7px black;
+  text-shadow: 2px 2px 4px var(--text-shadow-dark);
 }
 
 .artist-grid-item {
-  /* margin-bottom: 2em; */
   width: 460px;
   font-size: 1.7rem;
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
+  transition: transform .3s ease;
 }
 
 .artist-profile-main-page {
   border-radius: 50%;
   max-width: 250px;
   height: 250px;
-  box-shadow: 2px 2px 11px 2px black;
+  box-shadow: 1px 1px 11px 2px var(--text-shadow-dark);
+  transition: transform .3s ease;
 }
 
 .artist-link {
@@ -291,13 +310,26 @@ main {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   color: var(--header-color);
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 10px var(--text-shadow-dark);
+  transition: transform .3s ease;
 }
 
 .artist-link:hover {
   font-weight: bold;
-  color: rgb(250, 185, 90);
+  color: var(--link-hover-2);
+  text-shadow: 1px 1px 10px var(--text-shadow-light);
 }
+
+.artist-profile-main-page:hover {
+  box-shadow: 1px 1px 11px 2px var(--text-shadow-light)
+}
+
+.artist-grid-item:hover {
+  transform: scale(1.1);
+}
+
+
+
 
 /* ---------------------------------- */
 /* ----- Artists Work Main Page ----- */
@@ -320,25 +352,52 @@ main {
   max-width: 320px;
   padding: 5px;
   border-style: solid;
+  border-color: var(--primary-text-color);
   margin: 10px;
-  background-color: whitesmoke;
+  background-color: var(--background-color-2);
   border-width: 5px;
-  box-shadow: 2px 2px 11px 5px rgb(0, 0, 0);
+  box-shadow: 2px 2px 11px 5px var(--text-shadow-dark);
+  overflow: hidden;
+  transition: transform .5s ease;
 }
 
-.accordion-button {
+.tattoo-picture:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 11px 5px var(--text-shadow-light);
+}
+
+
+.main-page-work-button {
   width: 250px;
   margin-left: auto;
   margin-right: auto;
-  color: #cb9266 !important;
-  background-color: #423419 !important;
-  border-width: 3px;
+  color: var(--background-color) !important;
+  background-color: var(--background-color-2) !important;
+  border-width: 1px;
   border-style: solid;
   font-family: 'Oleo Script Swash Caps', cursive !important;
   font-family: 'Rye', cursive !important;
-  text-shadow: 5px 5px 7px black;
+  text-shadow: .5px .5px .5px var(--text-shadow-light);
   font-size: x-large;
+  box-shadow: .5px .5px 10px 2px var(--text-shadow-dark);
+  transition: transform .3s ease;
+  border-radius: 5px;
 }
+
+.main-page-work-button:hover {
+  box-shadow: .1px .1px 10px 1px var(--text-shadow-light);
+  transform: scale(1.005);
+}
+
+.work-images {
+  border-width: 3px;
+  border-style: solid;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+
+
 
 /* -------------------------------- */
 /* ----- Testimonials Section ----- */
@@ -360,7 +419,7 @@ main {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   color: var(--header-color);
-  text-shadow: 5px 5px 7px black;
+  text-shadow: 5px 5px 7px var(--text-shadow-dark);
 }
 
 .carousel-inner {
@@ -374,21 +433,20 @@ main {
   min-height: 20em;
   padding-left: 80px;
   padding-right: 80px;
-  text-shadow: 1px 1px 10px black;
 }
 
 .carousel-emphasis {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 10px black;
   text-decoration: underline;
 }
 
 .testimonial-fb-link {
   margin-top: 10px;
-  text-shadow: 1px 1px 10px black;
 }
+
+
 
 
 /* ------------------------------------- */
@@ -398,8 +456,6 @@ main {
 .main-page-contact-section {
   padding-top: 1em;
   padding-bottom: 1em;
-  text-shadow: 1px 1px 10px black;
-  margin-bottom: 2em;
 }
 
 .main-page-contact-header {
@@ -407,7 +463,6 @@ main {
   color: var(--header-color);
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
-  text-shadow: 1px 1px 10px black;
 }
 
 .map-col {
@@ -443,7 +498,6 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1 px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -452,16 +506,10 @@ textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
 }
 
 .contact-form-container-inner {
@@ -474,7 +522,6 @@ input[type=submit]:hover {
 
 .contact-form-container {
   padding-top: 0;
-  /* max-width: 50%; */
   margin: 0;
   padding-left: 0;
   min-width: 320px !important;
@@ -483,7 +530,7 @@ input[type=submit]:hover {
 
 .main-page-contact-form {
   text-align: left;
-  background-color: rgb(33, 37, 41);
+  background-color: var(--background-dark);
   padding: 25px;
 }
 
