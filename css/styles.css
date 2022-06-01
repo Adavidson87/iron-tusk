@@ -91,6 +91,24 @@ header {
   transition: transform .5s ease;
 }
 
+.brand-small-screen {
+  display: none;
+}
+
+.brand-large-screen {
+  display: show;
+}
+
+@media (max-width: 400px) {
+  .brand-small-screen {
+    display: show;
+  }
+
+  .brand-large-screen {
+    display: none;
+  }
+}
+
 .nav-link {
   transition: transform .3s ease;
 }
@@ -413,6 +431,7 @@ main {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
+  /* height: 600px; */
 }
 
 .testimonials-header {
@@ -423,14 +442,15 @@ main {
 }
 
 .carousel-inner {
-  min-height: 400px;
+  min-height:300px;
   max-width: 100%;
   display: flex;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .carousel-item {
-  min-height: 20em;
+  /* min-height: 650px; */
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -444,6 +464,10 @@ main {
 
 .testimonial-fb-link {
   margin-top: 10px;
+}
+
+.carousel-indicators {
+  margin-top: 16px;
 }
 
 
@@ -478,7 +502,7 @@ main {
   padding-bottom: 46%;
   height: 0;
   overflow: hidden;
-  min-width: 320px !important;
+  min-width: 280px !important;
 }
 
 .google-map iframe {
@@ -487,6 +511,9 @@ main {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+  min-width: 280px !important;
+  padding: 0;
+  margin: 0;
 }
 
 .main-page-contact-form {
@@ -524,7 +551,7 @@ input[type=submit] {
   padding-top: 0;
   margin: 0;
   padding-left: 0;
-  min-width: 320px !important;
+  min-width: 280px !important;
 }
 
 
