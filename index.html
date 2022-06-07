@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body class="page-container">
   <div class="content-wrapper">
 
     <header>
@@ -40,14 +40,14 @@
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
 
               <li class="nav-item">
-                <a class="nav-link active-navbar" aria-current="page" href="index.html">Home <span
+                <a class="nav-link active-navbar" aria-current="true" href="index.html">Home <span
                     class="sr-only"></span></a>
               </li>
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="Artists.html" id="navbarDropdown" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">Artists</span></a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="artist_pages/chris_stephens.html">Chris Stephens</a></li>
                   <li><a class="dropdown-item" href="artist_pages/emmet_upton.html">Emmet Upton</a></li>
                   <li><a class="dropdown-item" href="artist_pages/emmy_stepien.html">Emmy Stepien</a></li>
@@ -106,57 +106,67 @@
       <section class="events-section">
         <div class="events-section-wrapper">
           <h1 class="events-section-header">UPCOMMING EVENTS</h1>
-          <h2 class="events-section-header">Artist Competetion</h2>
-          <div class="row">
-            <div><img class="event-img" src="img/artists-competition-crop.jpg"></div>
-            <div class="col event-text">
-              <p>We are going to hold our inaugural inner shop tattoo competition! <s>The competition will be held
-                  <u>Saturday, July 9th at 11:30am.</u></s> Each Iron Tusk tattoo artist will come up with an
-                original full
-                color Neo-Traditional tattoo design (designs will be released by <u>May 21st</u> ). We are asking
-                for
-                volunteers to be canvases. If you are selected, your tattoo will be <strong><u>FREE!</u></strong>
-                Lunch will be provided,
-                and you will have an original tattoo design on your body!</p>
-              <p><strong><u>UPDATE:</u></strong> Given the enthusiasm and public response to the Tattoo
-                Competition,
-                we decided to bump it up to <u>Sunday, June 5th at 11:30 am</u>. We will randomly select our
-                canvases
-                <u>Saturday, May 28th</u>. The designs are still on display at the tattoo shop. If you're
-                interested
-                in
-                being a canvas, time is running out!!! Drop by and put your name in the bucket. Thank you everyone
-                who already signed up, and we do apologize for any confusion.
-              </p>
-            </div>
-            <div class="event-text">
-              <h3 class="events-header">How the competition will work</h3>
-              <p>The people who will be canvases will be selected at random on July 2nd. The 4 people
-                selected will choose their tattoo artist at random and get the design the artist came up with. We
-                will
-                post the final tattoo without identifying the artist. We will leave voting open for 3 days.
-                Whoever
-                wins
-                will get a trophy and bragging rights.</p>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md ">
-                  <h3 class="events-header"> To qualify you must:</h3>
-                  <ol class="list-group list-group-numbered list-group-flush event-rules">
-                    <li class="list-group-item">Like and share <a
-                        href="https://m.facebook.com/irontusktattoos/photos/a.100534152553851/140875365186396/?type=3&source=48"
-                        target="_blank" rel="noopener noreferrer">this
-                        post</a> on Facebook</li>
-                    <li class="list-group-item">Come into the shop to submit your name and contact info by July 1st
-                    </li>
-                    <li class="list-group-item">Be able to sit for a tattoo for 6 - 8 hours</li>
-                    <li class="list-group-item">Have a great attitude and be ready for fun!</li>
-                  </ol>
-                </div>
-                <div class="col-md event-trophy">
-                  <h3 class="events-header">The Coveted Trophy</h3>
-                  <img class="trophy-img" src="img/iron-tusk-trophy.jpg">
+          <div class="accordion event-accordion" id="eventAccordion">
+            <div class="accordion-item event-accordion-item">
+              <h2 class="accoridon-header event-one-header" id="headingOne"><button class="accoridon-button events-section-header-button"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">Artist Competetion 06/05/2022</span></h2></button>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#eventAccordion">
+                <div class="row">
+                  <div><img class="event-img" src="img/artists-competition-crop.jpg"></div>
+                  <div class="col event-text">
+                    <p>We are going to hold our inaugural inner shop tattoo competition! <s>The competition will be held
+                        <u>Saturday, July 9th at 11:30am.</u></s> Each Iron Tusk tattoo artist will come up with an
+                      original full
+                      color Neo-Traditional tattoo design (designs will be released by <u>May 21st</u> ). We are asking
+                      for
+                      volunteers to be canvases. If you are selected, your tattoo will be <strong><u>FREE!</u></strong>
+                      Lunch will be provided,
+                      and you will have an original tattoo design on your body!</p>
+                    <p><strong><u>UPDATE:</u></strong> Given the enthusiasm and public response to the Tattoo
+                      Competition,
+                      we decided to bump it up to <u>Sunday, June 5th at 11:30 am</u>. We will randomly select our
+                      canvases
+                      <u>Saturday, May 28th</u>. The designs are still on display at the tattoo shop. If you're
+                      interested
+                      in
+                      being a canvas, time is running out!!! Drop by and put your name in the bucket. Thank you everyone
+                      who already signed up, and we do apologize for any confusion.
+                    </p>
+                  </div>
+                  <div class="event-text">
+                    <h3 class="events-header">How the competition will work</h3>
+                    <p>The people who will be canvases will be selected at random on July 2nd. The 4 people
+                      selected will choose their tattoo artist at random and get the design the artist came up with. We
+                      will
+                      post the final tattoo without identifying the artist. We will leave voting open for 3 days.
+                      Whoever
+                      wins
+                      will get a trophy and bragging rights.</p>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md ">
+                        <h3 class="events-header"> To qualify you must:</h3>
+                        <ol class="list-group list-group-numbered list-group-flush event-rules">
+                          <li class="list-group-item">Like and share <a
+                              href="https://m.facebook.com/irontusktattoos/photos/a.100534152553851/140875365186396/?type=3&source=48"
+                              target="_blank" rel="noopener noreferrer">this
+                              post</a> on Facebook</li>
+                          <li class="list-group-item">Come into the shop to submit your name and contact info by July
+                            1st
+                          </li>
+                          <li class="list-group-item">Be able to sit for a tattoo for 6 - 8 hours</li>
+                          <li class="list-group-item">Have a great attitude and be ready for fun!</li>
+                        </ol>
+                      </div>
+                      <div class="col-md event-trophy">
+                        <h3 class="events-header">The Coveted Trophy</h3>
+                        <img class="trophy-img" src="img/iron-tusk-trophy.jpg">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -204,95 +214,90 @@
 
       <section class="recent-work">
         <div class="recent-work-wrapper">
-          <h1 class="recent-work-header">Our Recent Work!</h1>
-          <div class="accoridon">
-            <p>
-              <button class="accordion-button main-page-work-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#workCollapse" aria-expanded="false" aria-controls="workCollapse">
-                Check it out!
-              </button>
-            </p>
-            <div class="accordion-collapse collapse work-images" id="workCollapse">
-              <a href="img/critter-tats/282235571_142101681730431_2754031503178883274_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\critter-tats\282235571_142101681730431_2754031503178883274_n.jpg"></a>
-              <a href="img/emmet-tats/280663538_141094588497807_3870885388740008377_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\emmet-tats\280663538_141094588497807_3870885388740008377_n.jpg"></a>
-              <a href="img/joshua-tats/280549149_140041518603114_5425220120727750805_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\280549149_140041518603114_5425220120727750805_n.jpg"></a>
-              <a href="img/critter-tats/280492330_139750375298895_2534150982686514854_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\critter-tats\280492330_139750375298895_2534150982686514854_n.jpg"></a>
-              <a href="img/critter-tats/279830104_138092248798041_6923391044341762375_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\critter-tats\279830104_138092248798041_6923391044341762375_n.jpg"></a>
-              <a href="img/joshua-tats/279834277_137766878830578_8136210069651168613_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\279834277_137766878830578_8136210069651168613_n.jpg"></a>
-              <a href="img/emmet-tats/279002288_134722129135053_6168182682475158417_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\emmet-tats\279002288_134722129135053_6168182682475158417_n.jpg"></a>
-              <a href="img/joshua-tats/278603612_132531216020811_4048117271638987014_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\278603612_132531216020811_4048117271638987014_n.jpg"></a>
-              <a href="img/joshua-tats/278480452_132530389354227_3953435442981450636_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\278480452_132530389354227_3953435442981450636_n.jpg"></a>
-              <a href="img/joshua-tats/278572959_132529286021004_2781187289717030330_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\278572959_132529286021004_2781187289717030330_n.jpg"></a>
-              <a href="img/joshua-tats/278560644_132528859354380_1021185008147164592_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\278560644_132528859354380_1021185008147164592_n.jpg"></a>
-              <a href="img/joshua-tats/278558493_132528876021045_958404189146197442_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\278558493_132528876021045_958404189146197442_n.jpg"></a>
-              <a href="img/joshua-tats/278530924_132528886021044_4689106840202656532_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\278530924_132528886021044_4689106840202656532_n.jpg"></a>
-              <a href="img/joshua-tats/278602983_132528526021080_2962183211430470513_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\278602983_132528526021080_2962183211430470513_n.jpg"></a>
-              <a href="img/joshua-tats/277794813_130252172915382_5280713040100218744_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\277794813_130252172915382_5280713040100218744_n.jpg" target="_blank"
-                  rel="noopener noreferrer"></a>
-              <a href="img/joshua-tats/277741307_128877233052876_2247773904943516938_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\277741307_128877233052876_2247773904943516938_n.jpg"></a>
-              <a href="img/emmet-tats/277571978_127615276512405_5542428840762757018_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\emmet-tats\277571978_127615276512405_5542428840762757018_n.jpg"></a>
-              <a href="img/emmet-tats/276319062_127002139907052_2510085981430244367_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\emmet-tats\276319062_127002139907052_2510085981430244367_n.jpg"></a>
-              <a href="img/critter-tats/275993563_124700440137222_358570831401333199_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\critter-tats\275993563_124700440137222_358570831401333199_n.jpg"></a>
-              <a href="img/emmet-tats/275555891_3771614576395964_8209019355189721560_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\emmet-tats\275555891_3771614576395964_8209019355189721560_n.jpg"></a>
-              <a href="img/joshua-tats/277248261_126170113323588_6374312632434727767_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\277248261_126170113323588_6374312632434727767_n.jpg"></a>
-              <a href="img/joshua-tats/275564450_121765790430687_849816087740700952_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\joshua-tats\275564450_121765790430687_849816087740700952_n.jpg"></a>
-              <a href="img/emmet-tats/274746753_119230660684200_6249322522184959919_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\emmet-tats\274746753_119230660684200_6249322522184959919_n.jpg"></a>
-              <a href="img/emmet-tats/274720944_120534283887171_8761743291857742092_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\emmet-tats\274720944_120534283887171_8761743291857742092_n.jpg"></a>
-              <a href="img/emmet-tats/274296661_116826610924605_8855606087622993068_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\emmet-tats\274296661_116826610924605_8855606087622993068_n.jpg"></a>
-              <a href="img/emmet-tats/273031702_108209721786294_4982794288535136643_n.jpg" target="_blank"
-                rel="noopener noreferrer"><img class="tattoo-picture"
-                  src="img\emmet-tats\273031702_108209721786294_4982794288535136643_n.jpg"></a>
-            </div>
+          <h1 class="recent-work-header">Our Recent Work! <a class="main-page-work-toggle" style="font-size: 1rem"
+              id="workToggle" data-bs-toggle="collapse" data-bs-target="#workCollapse" aria-expanded="false"
+              aria-controls="workCollapse">
+            </a></h1>
+          <div class="collapse work-images" id="workCollapse">
+            <a href="img/critter-tats/282235571_142101681730431_2754031503178883274_n.jpg" target="_blank"
+              rel="noopener noreferrer" id="tattooPicture"><img class="tattoo-picture"
+                src="img\critter-tats\282235571_142101681730431_2754031503178883274_n.jpg"></a>
+            <a href="img/emmet-tats/280663538_141094588497807_3870885388740008377_n.jpg" target="_blank"
+              rel="noopener noreferrer" id="tattooPicture"><img class="tattoo-picture"
+                src="img\emmet-tats\280663538_141094588497807_3870885388740008377_n.jpg"></a>
+            <a href="img/joshua-tats/280549149_140041518603114_5425220120727750805_n.jpg" target="_blank"
+              rel="noopener noreferrer" id="tattooPicture"><img class="tattoo-picture"
+                src="img\joshua-tats\280549149_140041518603114_5425220120727750805_n.jpg"></a>
+            <a href="img/critter-tats/280492330_139750375298895_2534150982686514854_n.jpg" target="_blank"
+              rel="noopener noreferrer" id="tattooPicture"><img class="tattoo-picture"
+                src="img\critter-tats\280492330_139750375298895_2534150982686514854_n.jpg"></a>
+            <a href="img/critter-tats/279830104_138092248798041_6923391044341762375_n.jpg" target="_blank"
+              rel="noopener noreferrer" id="tattooPicture"><img class="tattoo-picture"
+                src="img\critter-tats\279830104_138092248798041_6923391044341762375_n.jpg"></a>
+            <a href="img/joshua-tats/279834277_137766878830578_8136210069651168613_n.jpg" target="_blank"
+              rel="noopener noreferrer" id="tattooPicture"><img class="tattoo-picture"
+                src="img\joshua-tats\279834277_137766878830578_8136210069651168613_n.jpg"></a>
+            <a href="img/emmet-tats/279002288_134722129135053_6168182682475158417_n.jpg" target="_blank"
+              rel="noopener noreferrer" id="tattooPicture"><img class="tattoo-picture"
+                src="img\emmet-tats\279002288_134722129135053_6168182682475158417_n.jpg"></a>
+            <a href="img/joshua-tats/278603612_132531216020811_4048117271638987014_n.jpg" target="_blank"
+              rel="noopener noreferrer" id="tattooPicture"><img class="tattoo-picture"
+                src="img\joshua-tats\278603612_132531216020811_4048117271638987014_n.jpg"></a>
+            <a href="img/joshua-tats/278480452_132530389354227_3953435442981450636_n.jpg" target="_blank"
+              rel="noopener noreferrer" id="tattooPicture"><img class="tattoo-picture"
+                src="img\joshua-tats\278480452_132530389354227_3953435442981450636_n.jpg"></a>
+            <a href="img/joshua-tats/278572959_132529286021004_2781187289717030330_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\joshua-tats\278572959_132529286021004_2781187289717030330_n.jpg"></a>
+            <a href="img/joshua-tats/278560644_132528859354380_1021185008147164592_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\joshua-tats\278560644_132528859354380_1021185008147164592_n.jpg"></a>
+            <a href="img/joshua-tats/278558493_132528876021045_958404189146197442_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\joshua-tats\278558493_132528876021045_958404189146197442_n.jpg"></a>
+            <a href="img/joshua-tats/278530924_132528886021044_4689106840202656532_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\joshua-tats\278530924_132528886021044_4689106840202656532_n.jpg"></a>
+            <a href="img/joshua-tats/278602983_132528526021080_2962183211430470513_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\joshua-tats\278602983_132528526021080_2962183211430470513_n.jpg"></a>
+            <a href="img/joshua-tats/277794813_130252172915382_5280713040100218744_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\joshua-tats\277794813_130252172915382_5280713040100218744_n.jpg" target="_blank"
+                rel="noopener noreferrer"></a>
+            <a href="img/joshua-tats/277741307_128877233052876_2247773904943516938_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\joshua-tats\277741307_128877233052876_2247773904943516938_n.jpg"></a>
+            <a href="img/emmet-tats/277571978_127615276512405_5542428840762757018_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\emmet-tats\277571978_127615276512405_5542428840762757018_n.jpg"></a>
+            <a href="img/emmet-tats/276319062_127002139907052_2510085981430244367_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\emmet-tats\276319062_127002139907052_2510085981430244367_n.jpg"></a>
+            <a href="img/critter-tats/275993563_124700440137222_358570831401333199_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\critter-tats\275993563_124700440137222_358570831401333199_n.jpg"></a>
+            <a href="img/emmet-tats/275555891_3771614576395964_8209019355189721560_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\emmet-tats\275555891_3771614576395964_8209019355189721560_n.jpg"></a>
+            <a href="img/joshua-tats/277248261_126170113323588_6374312632434727767_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\joshua-tats\277248261_126170113323588_6374312632434727767_n.jpg"></a>
+            <a href="img/joshua-tats/275564450_121765790430687_849816087740700952_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\joshua-tats\275564450_121765790430687_849816087740700952_n.jpg"></a>
+            <a href="img/emmet-tats/274746753_119230660684200_6249322522184959919_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\emmet-tats\274746753_119230660684200_6249322522184959919_n.jpg"></a>
+            <a href="img/emmet-tats/274720944_120534283887171_8761743291857742092_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\emmet-tats\274720944_120534283887171_8761743291857742092_n.jpg"></a>
+            <a href="img/emmet-tats/274296661_116826610924605_8855606087622993068_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\emmet-tats\274296661_116826610924605_8855606087622993068_n.jpg"></a>
+            <a href="img/emmet-tats/273031702_108209721786294_4982794288535136643_n.jpg" target="_blank"
+              rel="noopener noreferrer"><img class="tattoo-picture"
+                src="img\emmet-tats\273031702_108209721786294_4982794288535136643_n.jpg"></a>
           </div>
         </div>
 

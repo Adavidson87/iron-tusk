@@ -35,14 +35,13 @@
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home <span
-                    class="sr-only"></span></a>
+                <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
               </li>
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="Artists.html" id="navbarDropdown" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">Artists</span></a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="artist_pages/chris_stephens.html">Chris Stephens</a></li>
                   <li><a class="dropdown-item" href="artist_pages/emmet_upton.html">Emmet Upton</a></li>
                   <li><a class="dropdown-item" href="artist_pages/emmy_stepien.html">Emmy Stepien</a></li>
@@ -55,7 +54,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active-navbar" href="FAQ.html">FAQ</a>
+                <a class="nav-link active-navbar" aria-current="true" href="FAQ.html">FAQ</a>
               </li>
 
               <li class="nav-item">
@@ -76,57 +75,221 @@
 
       <section class="faq-section">
         <div class="faq-wrapper">
-          <h1 class="faq-header">FAQ</h1>
-          <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button faq-one-header" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Care for your new tattoo</button>
+          <h1 class="faq-page-title">FAQ</h1>
+          <div class="accordion faq-accordion" id="faqAccordion">
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header faq-header" id="headingOne">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">How to care for your new
+                  tattoo</button>
               </h2>
               <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="faqAccordion">
-                <div class="accordion-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</pLorem>
+                <div class="accordion-body faq-accordion-body">
+                  <p>We recommend that you keep the bandage on, covering your tattoo for the first night. It can be
+                    removed the next day when showering.</p>
+                  <p>When you wash your tattoo, wash with soap and warm water then pat dry with a clean paper towel or
+                    let it air dry. Afterwards apply a thin layer of ointment that is meant for tattoo aftercare. We can
+                    provide some to you or at some suggestions. Your tattoo will need to breath while it is
+                    healing so do not use an excessive amount of ointment on it. The ointment will need to be applied
+                    several times a day, every two to three hours.</p>
+                  <p>It is advisable to keep your tattoo covered while you sleep for the first few days to keep it from
+                    rubbing against or sticking to clothes or bedsheets.</p>
+                  <p>The tattoo should begin to peel, much like a sunburn, after a few days of proper care. Do not pick
+                    at it while it does, let it come off naturally.</p>
+                  <p>You should keep your new tattoo covered when out in the sun for the first few weeks while it is
+                    still healing, and you should avoid swimming or any activity that involves soaking your tattoo in
+                    water. That means avoiding swimming pools, lakes, rivers, oceans, hot tubs, etc.</p>
+                  <p>It is normal for your tattoo to itch. Please do not scratch it when it does as it can cause damage
+                    to your tattoo. Instead lightly pat it or apply lotion.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqTwo" aria-expanded="true" aria-controls="faqTwo">How much will my tattoo
+                  cost?</button>
+              </h2>
+              <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>Our prices are determined by the length of time it will take to complete the piece.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqThree" aria-expanded="true" aria-controls="faqThree">Will I be able to see the
+                  sketch/drawing before work begins?</button>
+              </h2>
+              <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>Yes, we always make sure that our customers approve before we begin.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqFour" aria-expanded="true" aria-controls="faqFour">Will I need my ID?</button>
+              </h2>
+              <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>Yes, you must have a proper ID with you. We accept:
+                  <ol>
+                    <li>A valid driver's license or state issued ID card that has a photo of yourself and birthday.</li>
+                    <li>A valid military ID issued by the US military</li>
+                    <li>A valid passport</li>
+                    <li>A resident alien card</li>
+                  </ol>
                   </p>
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button faq-two-header" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faqTwo" aria-expanded="true" aria-controls="faqTwo">Placeholder Title</button>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqFive" aria-expanded="true" aria-controls="faqFive">Do you tattoo people under
+                  18?</button>
               </h2>
-              <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              <div id="faqFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                 data-bs-parent="faqAccordion">
-                <div class="accordion-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="accordion-body faq-accordion-body">
+                  <p>Nope. We are not going to do that.</p>
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button faq-three-header" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faqThree" aria-expanded="true" aria-controls="faqThree">Placeholder Title</button>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqSix" aria-expanded="true" aria-controls="faqSix">What forms of payment do you
+                  accept?</button>
               </h2>
-              <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              <div id="faqSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                 data-bs-parent="faqAccordion">
-                <div class="accordion-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="accordion-body faq-accordion-body">
+                  <p>Cash, check, credit cards, and debit cards.</p>
                 </div>
               </div>
             </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqSeven" aria-expanded="true" aria-controls="faqSeven">Can I drink alcohol before
+                  our session?</button>
+              </h2>
+              <div id="faqSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>Aboslutely not.
+                  <ol>
+                    <li>It thins your blood, making you bleed more.</li>
+                    <li>It is unethical to tattoo someone under the influence of drugs or alcohol. So do not get high
+                      before either.</li>
+                    <li>It is illegal to tattoo someone under the influence of drugs or alcohol.</li>
+                  </ol>
+                  We will cancel your session if you show up intoxicated, so please just don't. Please come in sober.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqEight" aria-expanded="true" aria-controls="faqEight">What should I expect on the
+                  day of my appointment?</button>
+              </h2>
+              <div id="faqEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>Wear comfortable clothing that gives access to the are where we will work. Please arrive on time or
+                    a few minutes early, and if you are running late, let us know please! We will take breaks if
+                    necessary.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqNine" aria-expanded="true" aria-controls="faqNine">What about piercings?</button>
+              </h2>
+              <div id="faqNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>We do not do piercings at this time, nor do we currently sell any jewelry.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqTen" aria-expanded="true" aria-controls="faqTen">What is your policy on
+                  deposits?</button>
+              </h2>
+              <div id="faqTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>I do not know how to answer this, as I have no idea what the touch up policy is.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingEleven">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqEleven" aria-expanded="true" aria-controls="faqEleven">What is your policy on
+                  cancellations?</button>
+              </h2>
+              <div id="faqEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>I do not know how to answer this, as I have no idea what the touch up policy is.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingTwelve">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqTwelve" aria-expanded="true" aria-controls="faqTwelve">What is your policy on
+                  touch-ups?</button>
+              </h2>
+              <div id="faqTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>I do not know how to answer this, as I have no idea what the touch up policy is.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-accordion-item">
+              <h2 class="accordion-header" id="headingThirteen">
+                <button class="accordion-button faq-header" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqThirteen" aria-expanded="true" aria-controls="faqThirteen">Can I bring someone
+                  with me?</button>
+              </h2>
+              <div id="faqThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+                data-bs-parent="faqAccordion">
+                <div class="accordion-body faq-accordion-body">
+                  <p>No. Not at this time.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
