@@ -7,10 +7,10 @@
   --link-hover-1: rgb(164, 187, 254);
   --link-hover-2: rgb(250, 185, 90);
   --header-color: rgb(196, 135, 84);
-  --background-color: rgb(48, 45, 34);
+  /* --background-color: rgb(48, 45, 34); */
   --background-color-2: rgb(245, 245, 245);
   --background-dark: rgb(33, 37, 41);
-  --primary-text-color: rgb(165, 145, 111);
+  --primary-text-color: rgba(165, 145, 111, 0.85);
   --text-shadow-dark: rgb(0, 0, 0);
   --text-shadow-light: rgb(142, 141, 141);
   --div-trans-bg-img: rgb(86, 87, 91);
@@ -18,9 +18,24 @@
   --div-stop-bl: rgb(82, 83, 87);
   --div-stop-br: rgb(48, 49, 51);
 
-  /* --header-color: rgb(255, 115, 0); */
-  /* --background-color: rgba(0, 164, 252, 0.233); */
-  /* --primary-text-color: rgb(255, 187, 110); */
+  /* --link-color: rgb(0, 82, 195); */
+  /* --link-hover-1: rgb(164, 187, 254); */
+  /* --link-hover-2: rgb(250, 185, 90); */
+  /* --header-color: rgb(145, 145, 145); */
+  --header-color: rgb(165, 145, 111);
+  --background-color: rgb(20, 20, 20);
+  /* --background-color-2: rgb(245, 245, 245); */
+  /* --background-dark: rgb(33, 37, 41); */
+  /* --primary-text-color: rgb(187, 187, 187); */
+  --picture-border-color: rgb(95, 95, 95);
+  /* --text-shadow-dark: rgb(0, 0, 0); */
+  /* --text-shadow-light: rgb(142, 141, 141); */
+  /* --div-trans-bg-img: rgb(86, 87, 91); */
+  /* --div-stop-bg-color: rgba(255, 199, 125, 0.253); */
+  /* --div-stop-bl: rgb(82, 83, 87); */
+  /* --div-stop-br: rgb(48, 49, 51); */
+
+
 }
 
 
@@ -46,7 +61,6 @@ body {
   color: var(--primary-text-color);
   margin: 0;
   padding: 0;
-  
 }
 
 a {
@@ -84,6 +98,7 @@ header {
   border-bottom-width: 1px;
   border-bottom-color: black;
   text-shadow: .5px .5px 5px var(--text-shadow-light);
+  height: 3em;
 }
 
 .navbar-brand {
@@ -120,7 +135,8 @@ header {
   }
 }
 
-.nav-link:hover, .navbar-brand:hover {
+.nav-link:hover,
+.navbar-brand:hover {
   font-weight: bolder;
   transform: scale(1.08);
 }
@@ -163,8 +179,8 @@ main {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1.5em;
   max-width: 100vw;
-  margin-top: 5em;
   text-shadow: .5px .5px 4px var(--text-shadow-dark);
   margin-bottom: 1em;
   min-height: 100vh;
@@ -243,7 +259,7 @@ main {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   color: var(--header-color) !important;
-  text-shadow: 2px 2px 4px var(--text-shadow-dark) !important; 
+  text-shadow: 2px 2px 4px var(--text-shadow-dark) !important;
 }
 
 .event-one-header {
@@ -254,7 +270,7 @@ main {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   color: var(--header-color) !important;
-  text-shadow: 2px 2px 4px var(--text-shadow-dark) !important; 
+  text-shadow: 2px 2px 4px var(--text-shadow-dark) !important;
   background-color: var(--background-color) !important;
   border-width: 0px !important;
   border-color: var(--background-color) !important;
@@ -405,12 +421,12 @@ main {
 
 .tattoo-picture {
   max-width: 320px;
-  padding: 5px;
+  padding: 8px;
   border-style: solid;
-  border-color: var(--primary-text-color);
+  border-color: var(--picture-border-color);
   margin: 10px;
   background-color: var(--background-color-2);
-  border-width: 5px;
+  border-width: 8px;
   box-shadow: 2px 2px 11px 5px var(--text-shadow-dark);
   overflow: hidden;
   transition: transform .5s ease;
@@ -421,7 +437,6 @@ main {
   box-shadow: 1px 1px 11px 5px var(--text-shadow-light);
 }
 
-
 .main-page-work-toggle {
   transition: transform .3s ease;
   border-radius: 5px;
@@ -430,6 +445,7 @@ main {
 .main-page-work-toggle:hover {
   text-shadow: .1px .1px 10px 1px var(--text-shadow-light);
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .main-page-work-toggle:before {
@@ -475,7 +491,7 @@ main {
 }
 
 .carousel-inner {
-  min-height:300px;
+  min-height: 300px;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -651,6 +667,7 @@ input[type=submit] {
   margin-left: auto;
   margin-right: auto;
 }
+
 .faq-accordion-body {
   background-color: var(--background-color) !important;
   font-size: 1.2rem;
@@ -664,7 +681,6 @@ input[type=submit] {
 /* ------------------------ */
 
 .contact-page-header {
-  margin-top: 0;
   color: var(--header-color);
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
@@ -677,13 +693,27 @@ input[type=submit] {
 /* ----- Merchandise Page ----- */
 /* ---------------------------- */
 
-.merch-img {
-  max-width: 420px;
-  padding: 5px;
+.merch-page-header {
+  color: var(--header-color);
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
+  margin-top: 2em;
 }
 
-.merch-img-main {
+.merch-img {
+  max-width: 420px;
+  margin: 5px;
+  padding: 5px;
+  background-color: var(--background-color-2);
+}
+
+.merch-img-top {
   max-width: 700px;
+  margin: 5px;
+  padding: 5px;
+  background-color: var(--background-color-2);
+  border: 5px;
+  border-color: var(--picture-border-color);
 }
 
 .merch-page-row {
@@ -696,4 +726,46 @@ input[type=submit] {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-family: 'Rye', cursive;
   margin-top: 5px;
+}
+
+.merch-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 420px;
+  margin: 5px;
+  border: 2px;
+  border-color: var(--picture-border-color)
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  text-shadow: 1px 1px 5px black;
+  background-color:rgb(0, 0, 0, .5);
+  width: 410px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-bottom: 3px;
+}
+
+
+
+/* ------------------------- */
+/* ----- About Us page ----- */
+/* ------------------------- */
+
+.about-us-header {
+  color: var(--header-color);
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Rye', cursive;
+  margin-top: 5em;
+}
+
+.about-us-body {
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
 }
